@@ -3,6 +3,7 @@
 .clr{
 	clear: both;
 }
+
 // button
 .button{
 	padding: 0 25px;
@@ -42,6 +43,9 @@
 	border-radius: 4px;
 	@include box-shadow(0 2px 20px rgba(0,0,0,.75));
 	.button_bl{
+		float: right;
+	}
+	.fl_r{
 		float: right;
 	}
 }
@@ -295,4 +299,79 @@
 			color: #627b89;
 		}
 	}
+}
+// period
+.wrap-period{
+	padding: 30px 44px 20px;
+	.period_active{
+		background: #fafafa;
+		position: relative;
+		border: 2px solid #a6cc3d;
+		color: #4d5458;
+		&:after{
+			content: "";
+			width: 27px;
+			height: 27px;
+			background: url(../images/icons/Ok.png) 0px 0 no-repeat;
+			position: absolute;
+			top: -15px;
+			right: -8px;
+		}
+	}
+}
+.period{
+	width: 350px;
+	height: 130px;
+	float: left;
+	border: 1px dashed #d9d9d9;
+	border-radius: 5px;
+	color: #a8a8a8;
+	text-align: center;
+	&:hover{
+		cursor: pointer;
+	}
+	.period__top{
+		font-family:"Open Sans Bold";
+		font-size: 22px;
+		border-bottom: 1px solid #d9d9d9;
+		padding: 9px 0;
+	}
+	.period__cont{
+		padding: 10px 0;
+		font-family:"Open Sans Semibold";
+	}
+	.period__season{
+		margin-bottom: 12px;
+		font-size: 24px;
+	}
+	.period__age{
+		font-size: 16px;
+		color: #ababab;
+	}
+	.period__other{
+		padding: 38px 0;
+		font-family:"Open Sans Bold";
+		font-size: 20px;
+	}
+	.period__ico{
+		width: 49px;
+		height: 49px;
+		margin-right: 30px;
+		background: url(../images/icons/Period__ico.png) 0px 0 no-repeat;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.period_small{
+	height: auto;
+	.period__other{
+		padding: 23px 0;
+	}
+}
+.period__desc{
+	margin-top: 25px;
+	font-family:"Open Sans Semibold";
+	font-size: 14px;
+	color: #999;
+	text-align: center;
 }
