@@ -1,0 +1,386 @@
+@import "base";
+
+.supertable{
+	width: 100%;
+	padding-bottom: 10px;
+	min-width: 800px;
+	font-size: 12px;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #627b89;
+	overflow: hidden;
+	min-width: 630px + 201px + 171px;
+	table{
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	.supertable__left{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 201px;
+	}
+	.supertable__right{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 171px;
+		font-weight: bold;
+		td{
+			width: 85px;
+			font-size: 11px;
+		}
+	}
+	.supertable__center-wrap{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.supertable__center-in{
+		//width: 30000px;
+	}
+	.supertable__center{
+		table{
+			table-layout: fixed;
+			width: 100%;
+			.supertable__month td{
+				width: auto !important;
+			}
+		}
+	}
+	.supertable__bottom{
+		box-shadow:0 -10px 10px -10px rgba(#000, .3);
+		position: relative;
+		.supertable__center{
+			table{
+				table-layout: fixed;
+				td{
+					width: auto  !important;
+				}
+			}
+		}
+		td{
+			background: #fff !important;
+		}
+		b{
+			font-weight: bold;
+		}
+	}
+	.supertable__itogo{
+		*{
+			font-weight: bold;
+		}
+	}
+	.supertable__wrapper .supertable__center{
+		table td{
+			width: auto !important;
+		}
+	}
+	.supertable__center{
+		margin: 0 170px 0 200px;
+		min-width: 600px;
+	}
+	.supertable__checkbox{
+		width: 36px;
+		display: inline-block;
+		cursor: pointer;
+		.supertable__checkbox-in{
+			display: inline;
+			position: relative;
+		}
+		input{
+			width: 15px;
+			height: 15px;
+			opacity: 0;
+			vertical-align: middle;
+			position: relative;
+			z-index: 2;
+			cursor: pointer;
+		}
+			input:checked + i{
+					@include sized-sprite($icons, input_checked_ico);
+				}
+		i{
+			position: absolute;
+			@include sized-sprite($icons, input_ico);
+			left: 0;
+			top: 0;
+			line-height: 16px;
+		}
+	}
+	.supertable__mark{
+		color: #4d9b44;
+	}
+	.supertable__sort-by{
+		cursor: pointer;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.supertable__title{
+		position: relative;
+		width: 151px;
+		height: 59px;
+		text-align: left;
+		font-weight: bold;
+		color: #4a9cc8;
+		padding-left: 11px;
+		font-size: 16px;
+		.supertable__arr-up2{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+			@include sized-sprite($icons, st_arr_up2);
+
+		}
+		.supertable__arr-down2{
+			position: absolute;
+			top: 32px;
+			right: 20px;
+			cursor: pointer;
+			@include sized-sprite($icons, st_arr_down2);
+		}
+	}
+	.supertable__pagination_right{
+		width: 30px;
+		position: absolute;
+		top: 5px;
+		right: 172px;
+		height: 97%;
+		background: #fff;
+		@include opacity(.4);
+		cursor: pointer;
+		&:hover{
+			@include opacity(.6);
+		}
+		i{
+			@include sized-sprite($icons, st_global_right);
+			position: absolute;
+			top: 50%;
+			margin-top: -11px;
+			right: 5px;
+			content: "";
+			cursor: pointer;
+		}
+	}
+	.supertable__pagination_left{
+		width: 40px;
+		position: absolute;
+		top: 5px;
+		left: 201px;
+		height: 97%;
+		background: #fff;
+		@include opacity(.4);
+		cursor: pointer;
+		&:hover{
+			@include opacity(.6);
+		}
+		i{
+			@include sized-sprite($icons, st_global_left);
+			position: absolute;
+			top: 50%;
+			margin-top: -11px;
+			left: 15px;
+			content: "";
+			cursor: pointer;
+		}
+	}
+
+//top row
+.supertable__topper{
+	background: #fff;
+	display: block;
+	width: 100%;
+	position: relative;
+	@include box-shadow(0px 6px 12px -6px rgba(131, 131, 131, 0.60));
+	z-index: 1;
+	td {
+		text-align: center;
+		font-size: 12px;
+	}
+	.supertable__year{
+		background: url(../images/supertable_bg.png);
+		font-size: 12px;
+		font-weight: bold;
+		color: #90a2ab;
+	}
+	.supertable__month{
+		td{
+			width: 159px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+
+	.supertable__raw{
+		td {
+			height: 59px;
+		}
+	}
+
+	.supertable__center{
+		td {
+			border: 1px solid #d0d8df;
+			line-height: 29px;
+			text-align: center;
+			background-color: #fff;
+		}
+	}
+	.supertable__left{
+		background: #fff;
+		td {
+			border: 1px solid #d0d8df;
+			line-height: 59px;
+			text-align: center;
+		}
+		td:first-child{
+			cursor: pointer !important;
+		}
+	}
+	.supertable__right{
+		background: #fff;
+		border-bottom: 1px solid #d0d8df;
+		td {
+			border: 1px solid #d0d8df;
+			line-height: 59px;
+			text-align: center;
+			color: #4a9cc8;
+			border-bottom: none;
+
+		}
+		.supertable__right-col1,
+		.supertable__right-col2{
+			position: relative;
+			text-align: left;
+			padding-left: 5px;
+			width: 80px;
+		}
+		.supertable__arr-up{
+			position: absolute;
+			top: 23px;
+			right: 5px;
+			cursor: pointer;
+			@include sized-sprite($icons, st_arr_up);
+
+		}
+		.supertable__arr-down{
+			position: absolute;
+			top: 32px;
+			right: 5px;
+			cursor: pointer;
+			@include sized-sprite($icons, st_arr_down);
+		}
+	}
+}
+
+
+//content row
+.supertable__content{
+	position: relative;
+	display: block;
+	-ms-overflow-y: scroll;
+	overflow-y: scroll;
+	background: #fafcfc;
+	tr:nth-child(even) td{
+		background: #fafcfc;
+	}
+
+	td{
+		background: #f5f7f7;
+	}
+	td {
+		border: 1px solid #d0d8df;
+		border-top: none;
+		line-height: 29px;
+		text-align: center;
+	}
+	.supertable__left{
+		width: 201px;
+		.t__col2{
+			width: 165px;
+			font-weight: bold;
+			padding-left: 11px;
+			text-align: left;
+			white-space: nowrap;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			div{
+				white-space: nowrap;
+				overflow: hidden;
+				-ms-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+	.supertable__right{
+		width: 171px;
+	}
+	.supertable__center{
+		position: relative;
+		min-width: 300px;
+		margin: 0 170px 0 200px;
+		td{
+			width: 159px;
+		}
+	}
+}
+
+
+
+//baron-scroller
+.supertable__wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    overflow: hidden;
+    height: 245px;
+    width: 100%;
+	border-top: 1px solid #d0d8df;
+	border-bottom: 1px solid #d0d8df;
+}
+	.supertable__scroller {
+	    height: 100%;
+	    overflow-y: scroll;
+	    -webkit-overflow-scrolling: touch;
+	}
+	.supertable__scroller::-webkit-scrollbar {
+	    width: 0;
+	}
+	.scroller__bar-wrapper {
+		display: none;
+	    position: absolute;
+	    z-index: 1;
+	    top: 10px;
+	    bottom: 10px;
+	    right: 5px;
+	    width: 8px;
+	    border-radius: 5px;
+	    background: #ddf;
+	    background: rgba(0, 0, 0, .13);
+	}
+	.scroller__bar {
+		cursor: pointer;
+	    position: absolute;
+	    z-index: 1;
+	    width: 6px;
+	    min-height: 40px;
+	    -webkit-transition: width .2s linear;
+	    transition: width .2s linear;
+	    @include background-image(linear-gradient(bottom, #60b4e1 0%, #5fbaeb 100%));
+		@include opacity(.3);
+		border: 1px solid #428eb7;
+		@include border-radius(4px);
+	}
+	.scroller__bar:hover {
+	    opacity: .8;
+	}
+	.supertable__baron .scroller__bar-wrapper {
+	    display: block;
+	}
+
+	.supertable__content {
+	    overflow: hidden;
+	}
+
+}

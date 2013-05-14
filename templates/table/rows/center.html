@@ -1,0 +1,11 @@
+<% for (var i = 0; i < data.length; i++) { %>
+	<% if (i == maxIndex) { %>
+		<td>
+			<span class="supertable__mark"><%= formatNumber(data[i]) %></span>
+		</td>
+	<% } else { %>
+		<td><%= formatNumber(data[i]) %></td>
+	<% } %>
+
+
+<% } %>

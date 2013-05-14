@@ -1,0 +1,330 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="styles/screen.css" >
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out" role="analytics">
+	<!-- BEGIN  sidebar-->
+	<div class="sidebar">
+		<strong class="logo"><a href="#"></a></strong>
+		<ul class="nav">
+			<li><a href="#" class="dasher"><i></i><strong>DASHBOARD</strong></a></li>
+			<li class="active"><a href="#" class="analytics"><i></i><strong>Аналитика</strong></a></li>
+			<li class="disabled"><a href="#" class="company"><i></i><strong>Кампании</strong></a></li>
+			<li><a href="#" class="sites"><i></i><strong>Площадки</strong></a></li>
+			<li><a href="#" class="history"><i></i><strong>Журнал</strong></a></li>
+			<li><a href="#" class="support"><i></i><strong>Поддержка</strong><span class="mess_num">2</span></a></li>
+			
+		</ul>
+		<div class="lang"></div>
+	</div>
+	<!-- END sidebar-->
+
+	<!-- BEGIN  header-->
+	<div class="header" role="menu">
+		<!-- BEGIN HEADER__TOP -->
+		<div class="header__top">
+		<!-- BEGIN MENU -->
+		<div>
+			<div class="category" role="section">
+				<a class="category__selected" href="#" role="toggle">
+					<span data-name="campaigns">
+						<!-- <i class="i_flag"></i> -->По кампаниям
+					</span>
+					<div class="category__arr"></div>
+				</a>
+				<div  class="category__drop">
+					<div class="category__drop-t"></div>
+					<ul class="category__list">
+						<li>
+							<span data-name="banners">
+								<!-- <i class="i_lock"></i> -->Объявления
+							</span>
+						</li>
+						<li>
+							<span data-name="sites">
+								<!-- <i class="i_mess"></i> -->Площадки
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="menu">
+				<ul role="category">
+					<li class="active" data-name="common"><a href="#">Общее</a></li>
+					<li data-name="country"><a href="#">Страны</a></li>
+					<li data-name="operator"><a href="#">Операторы</a></li>
+					<li data-name="platform"><a href="#">Платформы</a></li>
+					<li data-name="vendor"><a href="#">Производители</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END MENU -->
+
+		<a href="#" class="notification">
+			<i class="notification__icon"></i>
+			<span class="notification__num">5</span>
+		</a>
+		<div class="top-profile">
+			<div class="top-profile__arr"></div>
+			<span class="top-profile__email">alexeykomarov@gmail.com</span>
+		</div>
+		<div class="separator"></div>
+		<div class="help">
+			<a href="#" class="help__icon">?</a>
+		</div>
+		</div>
+		<!-- END HEADER__TOP -->
+
+		<!-- BEGIN .header__bottom -->
+		<div class="header__bottom">
+			<ul class="data-menu" role="data-menu"></ul>
+
+			<div class="select-date" role="calendar">
+				<div class="select-date__in">
+					<span class="i_calendar"></span>
+					<strong class="date-interval" role="date-string">01.10.12 - 01.03.13</strong>
+				</div>
+				<!-- BEGIN  cal-->
+				<div class="cal">
+					<div class="cal__shorthand" role="range-preset">
+						<ul>
+							<li><a href="#" role="today">Сегодня</a></li>
+							<li><a href="#" role="yesterday">Вчера</a></li>
+							<li><a href="#" role="seven-days">Семь дней</a></li>
+							<li><a href="#" role="week">Неделя</a></li>
+							<li><a href="#" role="month">Месяц</a></li>
+							<li><a href="#" role="last-month">Прошлый месяц</a></li>
+							<li><a href="#" role="quarter">Квартал</a></li>
+							<li><a href="#" role="year">Год</a></li>
+							<li><a href="#" role="all-time">Все время</a></li>
+						</ul>
+					</div>
+
+					<div role="date-picker" class="datepickerwrap"></div>
+
+
+				</div>
+				<!-- END cal-->
+
+			</div>
+			<div class="devider"></div>
+			<dl class="detalisation" role="detail">
+				<dt class="detalisation__value" role="title">Автоматически</dt>
+				<dd class="detalisation__drop">
+					<ul role="dropdown">
+						<li data-name="hour">По часам</li>
+						<li data-name="day">По дням</li>
+						<li data-name="week">По неделям</li>
+						<li data-name="month">По месяцам</li>
+						<li data-name="year">По годам</li>
+						<li role="auto" style="display: none">Автоматически</li>
+					</ul>
+				</dd>
+			</dl>
+
+
+		</div>
+		<!-- END .header__bot -->
+	</div>
+	<!-- END header-->
+
+	<!-- BEGIN  main-->
+	<div class="main">
+		<!-- BEGIN .chart -->
+		<div class="chart">
+			<!-- BEGIN .chart__content -->
+			<div class="chart__content">
+				<!-- BEGIN .timeline -->
+				<div class="timeline">
+					<div class="tl__lm">
+						<a class="tl_less" href="#"></a>
+						<a class="tl_more" href="#"></a>
+					</div>
+					<div class="tl__graph">
+						<img src="images/tl.png" alt="" style="display:block;">
+						<div class="wiper_l"></div>
+						<div class="wiper_r"></div>
+						<div class="tl__sh_l"><a href="#" class="tl_left"></a></div>
+						<div class="tl__sh_r"><a href="#" class="tl_right"></a></div>
+						<div class="tl__arr"></div>
+					</div>
+				</div>
+				<!-- END .timeline -->
+
+				<!-- BEGIN .graph -->
+				<div class="graph" role="chart"></div>
+				<!-- END .graph -->
+			</div>
+			<!-- END .chart__content -->
+		</div>
+		<!-- END .chart -->
+
+		<!-- BEGIN  table-inf-->
+		<div class="table-inf" role="table">
+			<!-- BEGIN  table-inf__top-->
+			<div class="table-inf__top" role="table-top">
+				<div role="tabs">
+					
+					
+					<div class="wrapbtns" role="buttons">
+						<a href="#" class="btn_ico" role="toggle-chart"><span class="two-arr"></span></a>
+						<a href="#" class="btn">Составить отчет</a>
+						<div class="two-btn">
+							<a href="#" class="btn_ico"><span class="btn__plus"></span></a>
+							<a href="#" class="btn btn_num">Оповещения<span class="btn__num">5</span></a>
+						</div>
+					</div>
+					
+				</div>
+
+				
+			</div>
+			<!-- END table-inf__top-->
+
+			<!-- supertable -->
+			<div class="supertable" role="table-content">
+				<!-- supertable__topper -->
+				<div class="supertable__topper" role="head">
+					<!-- supertable__left -->
+					<div class="supertable__left" role="left">
+						<table>
+							<tr>
+								<td role="check-all-wrap">
+									<div class="supertable__checkbox">
+
+										<div class="supertable__checkbox-in"><input type="checkbox" role="check-all"><i></i></div>
+									</div>
+								</td>
+								<td>
+									<div class="supertable__sort-by supertable__title">
+										<span role="name"></span>
+										<span class="supertable__arrows" role="sort-by-name">
+											<span class="supertable__arr-up2" role="reverse"></span>
+											<span class="supertable__arr-down2" role="direct"></span>
+										</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /.supertable__left -->
+					<!-- supertable__right -->
+					<div class="supertable__right" role="right">
+						<table>
+							<tr>
+								<td rowspan="2" class="supertable__right-col1">
+									<div class="supertable__sort-by">
+										Среднее
+												<span class="supertable__arrows" role="sort-by-average">
+													<span class="supertable__arr-up" role="reverse"></span>
+													<span class="supertable__arr-down" role="direct"></span>
+												</span>
+									</div>
+								</td>
+								<td rowspan="2" class="supertable__right-col2">
+									<div class="supertable__sort-by">
+										Всего
+												<span class="supertable__arrows" role="sort-by-total">
+													<span class="supertable__arr-up" role="reverse"></span>
+													<span class="supertable__arr-down" role="direct"></span>
+												</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /.supertable__right -->
+					<!-- supertable__center -->
+					<div class="supertable__center">
+						<!-- /.supertable__center-wrap -->
+						<div class="supertable__center-wrap">
+							<!-- /.supertable__center-in -->
+							<div class="supertable__center-in">
+								<table role="center">
+									<tr class="supertable__raw"><td></td></tr>
+								</table>
+							</div>
+							<!-- /.supertable__center-in -->
+						</div>
+						<!-- /.supertable__center-wrap -->
+					</div>
+					<!-- /.supertable__center -->
+				</div>
+				<!-- /.supertable__topper -->
+
+				<div class="supertable__wrapper">
+				<!-- supertable__scroller -->
+				<div class="supertable__scroller">
+
+					<!-- supertable__content -->
+					<div class="supertable__content" role="rows">
+						<!-- supertable__left -->
+						<div class="supertable__left">
+							<table role="table-left"></table>
+						</div>
+						<!-- /.supertable__left -->
+						<!-- supertable__right -->
+						<div class="supertable__right">
+							<table role="table-right"></table>
+						</div>
+						<!-- /.supertable__right -->
+						<!-- supertable__center -->
+						<div class="supertable__center">
+							<!-- supertable__center-wrap -->
+							<div class="supertable__center-wrap">
+								<!-- /.supertable__center-in -->
+								<div class="supertable__center-in">
+									<table role="table-center"></table>
+								</div>
+								<!-- /.supertable__center-in -->
+							</div>
+							<!-- /.supertable__center-wrap -->
+						</div>
+						<!-- /.supertable__center -->
+					</div>
+					<!-- /.supertable__content -->
+
+					<div class="supertable__pagination_right" role="next" style="display: none"><i></i></div>
+					<div class="supertable__pagination_left" role="prev" style="display: none"><i></i></div>
+
+
+
+					<div class="scroller__bar-wrapper">
+						<div class="scroller__bar"></div>
+					</div>
+				</div>
+				<!-- /.supertable__scroller -->
+				</div>
+			</div>
+			<!-- /.supertable -->
+
+		</div>
+		<!-- END table-inf-->
+	</div>
+	<!-- END main-->
+
+	<div class="lang">
+		<div class="lang__arr"></div>
+		<div class="lang__selected">
+			<img src="images/fl_ru.png" alt="ru">
+		</div>
+	</div>
+</div>
+<!-- END out-->
+
+<!-- Latest before </body>!!! -->
+<script src="scripts/lib/requirejs/require.js"></script>
+<script>
+	require(['./scripts/config'], function () {
+		require(['main']);
+	});
+</script>
+</body>
+</html>

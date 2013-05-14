@@ -1,0 +1,16 @@
+<tr class="supertable__month">
+	<% for (var i = 0; i < big.length; i++) { %>
+		<% var item = big[i]; %>
+		<td colspan="<%= item.count %>" class="supertable__year">
+			<%= item.name %>
+		</td>
+	<% } %>
+</tr>
+
+<tr class="supertable__month">
+	<% for (var i = 0; i < little.length; i++) { %>
+	<td>
+		<%= little[i] %>
+	</td>
+	<% } %>
+</tr>
