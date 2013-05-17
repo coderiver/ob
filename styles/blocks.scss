@@ -42,8 +42,19 @@ i.i_bag{
 	@include sized-sprite($icons, i_more);
 	display: inline-block;
 }
+.ii_arr{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 5px 0 5px 8px;
+	border-color: transparent transparent transparent #415865;
+}
 .i_arr-r{
 	@include sized-sprite($icons, ar_r);
+	display: inline-block;
+}
+.i_arr-d{
+	@include sized-sprite($icons, 'arr_b1');
 	display: inline-block;
 }
 .money_r{
@@ -84,6 +95,8 @@ i.i_bag{
 	border-radius: 4px;
 	text-decoration: none;
 	text-align: center;
+	font-family:"Open Sans Semibold";
+	font-size: 14px;
 	color: #627b89;
 }
 // fix nav
@@ -281,10 +294,16 @@ i.i_bag{
 		&:hover{
 			cursor: pointer;
 		}
-		.i_arr-r{
+		.ii_arr{
 			position: absolute;
 			top: 14px;
 			right: 14px;
+		}
+	}
+	.info__top_active{
+		.ii_arr{
+			border-width: 8px 5px 0 5px;
+			border-color: #415865 transparent transparent transparent;
 		}
 	}
 	.info__top_if-rirst{
