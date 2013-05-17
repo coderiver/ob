@@ -38,6 +38,14 @@ i.i_bag{
 .i_help{
 	@include sized-sprite($icons, i_help);
 }
+.i_more{
+	@include sized-sprite($icons, i_more);
+	display: inline-block;
+}
+.i_arr-r{
+	@include sized-sprite($icons, ar_r);
+	display: inline-block;
+}
 .money_r{
 	@include sized-sprite($icons, money_r);
 	display: inline-block;
@@ -66,6 +74,18 @@ i.i_bag{
 	border: 1px solid #8eb032;
 	border-radius: 3px;
 }
+.tuning{
+	width: 276px;
+	height: 35px;
+	line-height: 40px;
+	display: inline-block;
+	background: #f8fafb;
+	border: 1px solid #bad1d9;
+	border-radius: 4px;
+	text-decoration: none;
+	text-align: center;
+	color: #627b89;
+}
 // fix nav
 .nav{
 	.active_not-after{
@@ -87,6 +107,9 @@ i.i_bag{
 }
 .conteiner_alt{
 	padding: 0;
+}
+.conteiner_alt2{
+		padding: 15px 20px 0;
 }
 // stat
 .stat{
@@ -143,9 +166,14 @@ i.i_bag{
 		margin-bottom: 20px;
 	}
 	.statistics__graphic{
+		position: relative;
 		margin-bottom: 10px;
 		border: 1px solid #b6c8d2;
 		border-radius: 3px;
+		overflow: hidden;
+		&:hover{
+			cursor: pointer;
+		}
 	}
 	.statistics__desc{
 		padding: 0 10px;
@@ -180,6 +208,58 @@ i.i_bag{
 	.statistics__data_bl{
 		color: #6fbae3;
 	}
+	.statistics__filter{
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		// display: none;
+		&:hover{
+			display: block;
+		}
+	}
+	.statistics__more{
+		height: 32px;
+		line-height: 32px;
+		padding: 0 20px 0 40px;
+		position: relative;
+		background: #fff;
+		border-radius: 10px;
+		border: 1px solid #c4cace;
+		position: absolute;
+		top: 32px;
+		left: 99px;
+		font-family:"Open Sans Semibold";
+		font-size: 14px;
+		color: #627b89;
+		
+		// display: none;
+		.i_more{
+			position: absolute;
+			top: 7px;
+			left: 12px;
+		}
+		&:hover{
+			display: block;
+		}
+	}
+}
+.statistics_small{
+	width: 729px;
+	padding: 0;
+	margin-left: -20px;
+	li{
+		display: inline-block;
+		width: 333px;
+		margin-left: 20px;
+	}
+	.statistics__graphic{
+
+	}
 }
 // info
 .info{
@@ -195,6 +275,17 @@ i.i_bag{
 		font-family:"Open Sans Bold";
 		font-size: 16px;
 		color: #FFF;
+	}
+	.info__top_link{
+		position: relative;
+		&:hover{
+			cursor: pointer;
+		}
+		.i_arr-r{
+			position: absolute;
+			top: 14px;
+			right: 14px;
+		}
 	}
 	.info__top_if-rirst{
 		border-radius: 3px 3px 0 0;
@@ -264,7 +355,11 @@ i.i_bag{
 		font-size: 14px;
 		color: #91a1aa;
 		word-break: break-all;
-
+	}
+	.desc__cont_alt{
+		height: 31px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 // size
