@@ -1,3 +1,25 @@
 @import "base";
 
-/* default layout */
+/*  layout */
+.l{
+	width: 100%;
+	margin-bottom: -3px;
+	display: inline-block;
+	background: #edf3f5;
+	.l-col1{
+		float:left;
+		width: 730px;
+		margin: 10px;
+	}
+	.l-col2{
+		float: right;
+		width: 278px;
+		margin: 10px 10px 0 0;
+	}
+}
+// !!!
+.whats-up-man{
+	width: 1128px;
+	margin: 0 auto;
+	background: #627b89;
+}
