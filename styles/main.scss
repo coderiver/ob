@@ -442,4 +442,28 @@
 		right: 0;
 	}
 }
+// FOR position blocks
+.desc__cont_mod{
+	.big{
+		display: inline-block;
+	}
+}
+// FOR position blocks
+.supertable__label{
+	.ii_circle{
+		position: absolute;
+		bottom: -3px;
+		left: 11px;
+	}
+	.ii_arr-green{
+		position: absolute;
+		bottom: 0px;
+		left: 13px;
+	}
+	.ii_square-or{
+		position: absolute;
+		bottom: -3px;
+		left: 13px;
+	}
+}
 
