@@ -65,6 +65,72 @@
 			font-weight: bold;
 		}
 	}
+	.supertable__bottom_alt{
+		height: 58px;
+		bottom:60px;
+		overflow: hidden;
+		background: #fff;
+		border: 1px solid #bad1d9;
+		border-radius: 0px 0px 4px 4px;
+		.supertable__left{
+			width: 329px;
+			td{
+				padding: 14px 0px 11px 0px;
+				border-bottom: 1px solid #bad1d9;
+				border-right: 1px solid #bad1d9;
+			}
+			.table-left__wrap{
+				width: 220px;
+				padding: 0 15px;
+				div{
+					width: 30px;
+					height: 30px;
+					margin-right: 7px;
+					background: red;
+					display: inline-block;
+				}
+				.i_play, .i_stop, .i_wtf, .i_cross{
+					margin-right: 4px;
+				}
+			}
+			.reset_pad{
+				padding: 0;
+			}
+			table{
+				width: 100%;
+			}
+			.table-left__desc{
+				td{
+					padding: 0;
+					border: 0;
+				}
+			}
+			.table-left__title{
+				padding: 0 10px;
+				font-family:"Open Sans Semibold";
+				font-size: 13px;
+				color: #627b89;
+				line-height: 28px;
+				height: 28px;
+				overflow: hidden;
+			}
+			.table-left__title_border{
+				font-family: "Open Sans Bold";
+				border-top: 1px solid #dae3e6;
+			}
+
+		}
+		.supertable__right{
+			width: 378px;
+			margin-right: -1px;
+			tr{
+				height: 28px;
+			}
+			td{
+				width: 93px;
+			}
+		}
+	}
 	.supertable__itogo{
 		*{
 			font-weight: bold;
@@ -381,5 +447,159 @@
 
 	.supertable__content {
 	    overflow: hidden;
+	}
+}
+
+//////////////////////// ALT STYLES FOT SUPERTABLE //////////////////
+// table-inf_alt
+.table-inf{
+	border: 1px solid #b9d1d9;
+	@include border-radius(4px 4px 0 0);
+	background-color: #f5f5f5;
+
+}
+// supertable_alt
+.supertable_alt{
+	min-width: auto;
+}
+// ALT supertable
+.supertable{
+	.supertable__center_alt{
+		margin: 0 170px 0 74px;
+		min-width: 266px;
+	}
+	.supertable__left_inCampain{
+		width: auto;
+	}
+	.supertable__label{
+		width: 36px;
+		display: inline-block;
+		position: relative;
+	}
+}
+// supertable_alt
+.supertable_alt{
+	.supertable__right{
+		width: auto;
+	}
+	.supertable__content {
+		.supertable__left{
+			width: auto;
+		}
+	}
+	.supertable__topper {
+		.supertable__right {
+			.supertable__right-col1,
+			.supertable__right-col2{
+				width: auto;
+				padding: 0 28px 0 10px;
+				.supertable__sort-by{
+					font-family:"Open Sans Semibold";
+					font-size: 13px;
+					color: #5a707d;
+				}
+			}
+		}
+	}
+	.supertable__title{
+		height: 38px;
+		font-size: 14px;
+	}
+	.supertable__topper {
+		.supertable__raw {
+			td{
+				height: 38px;
+			}
+		}
+		.supertable__center, .supertable__left, .supertable__right{
+			td{
+				line-height: 38px;
+			}
+			.supertable__arr-up{
+				top: 10px;
+			}
+			.supertable__arr-down{
+				top: 19px;
+			}
+		}
+	}
+	.supertable__content {
+		.supertable__center{
+			width: 256px;
+			min-width: auto;
+			margin: 0 170px 0 75px;
+		}
+		td{
+			line-height: 28px;
+			font-weight: normal;
+			font-size: 12px;
+		}
+		.supertable__right{
+			width: 378px;
+			table{
+				width: 378px;
+				tr{
+					height: 28px;
+					line-height: 28px;
+				}
+
+			}
+			.table-right__rejected{
+				font: 12px "Open Sans Semibold",  Arial, sans-serif;
+				line-height: 28px;
+			}
+		}
+	}
+	.supertable__wrapper {
+		border-bottom: 0;
+		.supertable__center{
+			table {
+				td{
+					height: 28px;
+					border-left: 0;
+				}
+			}
+		}
+	}
+	.supertable__right{
+		table{
+			width: 100%;
+		}
+	}
+	.table-right__title{
+		font-family:"Open Sans";
+		font-size: 13px;
+		font-weight: normal;
+		text-align: center;
+		line-height: 28px;
+		border-right: 1px solid #bad1d9;
+
+	}
+	.table-right__title_bt{
+		font-family:"Open Sans Bold";
+		font-size: 13px;
+		border-top: 1px solid #bad1d9;
+	}
+}
+// select
+.select{
+	height: 32px;
+	line-height: 32px;
+	padding: 0 15px;
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #b9d1d9;
+	@include border-radius(4px);
+	font-family:"Open Sans Bold";
+	font-size: 18px;
+	color: #627b89;
+	&:active{
+		background: #d0d3d5;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+	.select__meta{
+		margin-right: 35px;
 	}
 }

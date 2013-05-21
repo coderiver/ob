@@ -50,6 +50,92 @@ i.i_bag{
 	@include sized-sprite($icons, 'arr_b1');
 	display: inline-block;
 }
+.i_play{
+	width: 28px;
+	height: 28px;
+	background: #93acba;
+	border: 1px solid #879aa4;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	&:hover{
+		background: #8da0ab;
+		cursor: pointer;
+	}
+	&:after{
+		content: "";
+		@include sized-sprite($icons, 'i_some-arrow');
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 9px;
+	}
+}
+.i_stop{
+	width: 28px;
+	height: 28px;
+	background: #93acba;
+	border: 1px solid #879aa4;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	&:hover{
+		background: #8da0ab;
+		cursor: pointer;
+	}
+	&:after{
+		content: "";
+		width: 10px;
+		height: 10px;
+		background: #fff;
+		border: 1px solid #879aa4;
+		border-radius: 1px;
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: 8px;
+	}
+}
+.i_wtf{
+	width: 28px;
+	height: 28px;
+	background: #f5f8fa;
+	border: 1px solid #879aa4;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	&:hover{
+		background: #ebf1f4;
+		cursor: pointer;
+	}
+	&:after{
+		content: "";
+		@include sized-sprite($icons, 'wtf');
+		position: absolute;
+		top: 6px;
+		left: 6px;
+	}
+}
+.i_cross{
+	width: 28px;
+	height: 28px;
+	background: #f5f8fa;
+	border: 1px solid #879aa4;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	&:hover{
+		background: #ebf1f4;
+		cursor: pointer;
+	}
+	&:after{
+		content: "";
+		@include sized-sprite($icons, 'i_cross');
+		position: absolute;
+		top: 8px;
+		left: 8px;
+	}
+}
 .ii_arr{
 	width: 0px;
 	height: 0px;
@@ -110,6 +196,7 @@ i.i_bag{
 .i_money-big{
 	@include sized-sprite($icons, money_r-big);
 	display: inline-block;
+	margin-right: 4px;
 }
 .b{
 	font-family:"Open Sans Semibold";
@@ -544,6 +631,13 @@ i.i_bag{
 	}
 }
 .notice_alt{
+	position: relative;
+	padding-left: 10px;
+	.i_arr-red{
+		position: absolute;
+		top: 12px;
+		left: -3px;
+	}
 	.notice__item{
 		width: auto;
 	}
@@ -554,17 +648,34 @@ i.i_bag{
 	font-size: 34px;
 	color: #627b89;
 }
-// table-inf_alt
-.table-inf{
-	border: 1px solid #b9d1d9;
-	@include border-radius(4px 4px 0 0);
-	background-color: #f5f5f5;
+// some-red
+.some-red{
+	font-family:"Open Sans";
+	font-size: 13px;
+	color: #f3a8a2;
+	width: 95px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	b{
+		font-family:"Open Sans Bold";
+		margin-right: 3px;
+	}
+}
+// some-blue
+.some-blue{
+	font-family:"Open Sans";
+	font-size: 13px;
+	width: 95px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	b{
+		font-family:"Open Sans Bold";
+		margin-right: 3px;
+	}
+}
 
-}
-// supertable_alt
-.supertable_alt{
-	min-width: auto;
-}
 // btn_noBorderLeft
 .btn_noBorderLeft{
 	border-left: 0;
@@ -576,127 +687,7 @@ i.i_bag{
 		@include sized-sprite($icons, i_plus-or);
 	}
 }
-// select
-.select{
-	height: 32px;
-	line-height: 32px;
-	padding: 0 15px;
-	display: inline-block;
-	background: #fff;
-	border: 1px solid #b9d1d9;
-	@include border-radius(4px);
-	font-family:"Open Sans Bold";
-	font-size: 18px;
-	color: #627b89;
-	&:active{
-		background: #d0d3d5;
-	}
-	&:hover{
-		cursor: pointer;
-	}
-	.select__meta{
-		margin-right: 35px;
-	}
-}
 
-// ALT supertable
-.supertable{
-	.supertable__center_alt{
-		margin: 0 170px 0 74px;
-		min-width: 266px;
-	}
-	.supertable__left_inCampain{
-		width: auto;
-	}
-	.supertable__label{
-		width: 36px;
-		display: inline-block;
-		position: relative;
-	}
-}
-// supertable_alt
-.supertable_alt{
-	.supertable__right{
-		width: auto;
-	}
-	.supertable__content {
-		.supertable__left{
-			width: auto;
-		}
-	}
-	.supertable__topper {
-		.supertable__right {
-			.supertable__right-col1,
-			.supertable__right-col2{
-				width: auto;
-				padding: 0 28px 0 10px;
-				.supertable__sort-by{
-					font-family:"Open Sans Semibold";
-					font-size: 13px;
-					color: #5a707d;
-				}
-			}
-		}
-	}
-	.supertable__title{
-		height: 38px;
-		font-size: 14px;
-	}
-	.supertable__topper {
-		.supertable__raw {
-			td{
-				height: 38px;
-			}
-		}
-		.supertable__center, .supertable__left, .supertable__right{
-			td{
-				line-height: 38px;
-			}
-			.supertable__arr-up{
-				top: 10px;
-			}
-			.supertable__arr-down{
-				top: 19px;
-			}
-		}
-	}
-	.supertable__content {
-		.supertable__center{
-			width: 256px;
-			min-width: auto;
-			margin: 0 170px 0 75px;
-		}
-		td{
-			line-height: 28px;
-			font-weight: normal;
-			font-size: 12px;
-		}
-		.supertable__right{
-			width: 378px;
-			table{
-				width: 378px;
-				tr{
-					height: 28px;
-				}
-
-			}
-			.table-right__rejected{
-				font: 12px "Open Sans Semibold",  Arial, sans-serif;
-				line-height: 28px;
-			}
-		}
-	}
-	.supertable__wrapper {
-		.supertable__center{
-			table {
-				td{
-					height: 28px;
-					border-left: 0;
-				}
-			}
-		}
-	}
-}
 // promo
 .promo{
 	@extend %clr;
