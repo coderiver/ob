@@ -2,19 +2,17 @@
 
 /*  layout */
 .l{
-	width: 100%;
+	overflow: hidden;
 	margin-bottom: -3px;
-	display: inline-block;
 	background: #edf3f5;
 	.l-col1{
-		float:left;
-		width: 730px;
+		overflow: hidden;
 		margin: 10px;
 	}
 	.l-col2{
 		float: right;
 		width: 278px;
-		margin: 10px 10px 0 0;
+		margin: 10px 10px 0 10px;
 	}
 }
 // !!!

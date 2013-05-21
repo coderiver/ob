@@ -308,7 +308,7 @@ i.i_bag{
 }
 // statistics
 .statistics{
-	width: 672px;
+	// width: 672px;
 	padding: 0 10px;
 	list-style: none;
 	li{
@@ -382,7 +382,8 @@ i.i_bag{
 		border: 1px solid #c4cace;
 		position: absolute;
 		top: 32px;
-		left: 99px;
+		left: 50%;
+		margin-left: -71px;
 		font-family:"Open Sans Semibold";
 		font-size: 14px;
 		color: #627b89;
@@ -399,13 +400,14 @@ i.i_bag{
 	}
 }
 .statistics_small{
-	width: 729px;
+	// width: 729px;
 	padding: 0;
-	margin-left: -20px;
+	margin-right: -2%;
+	overflow: hidden;
 	li{
-		display: inline-block;
-		width: 333px;
-		margin-left: 20px;
+		width: 48%;
+		margin-right: 2%;
+		float: left;
 	}
 	.statistics__graphic{
 
