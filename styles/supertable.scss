@@ -73,7 +73,7 @@
 		border: 1px solid #bad1d9;
 		border-radius: 0px 0px 4px 4px;
 		.supertable__left{
-			width: 329px;
+			width: 330px;
 			td{
 				padding: 14px 0px 11px 0px;
 				border-bottom: 1px solid #bad1d9;
@@ -122,7 +122,7 @@
 		}
 		.supertable__right{
 			width: 378px;
-			margin-right: -1px;
+			margin-right: -2px;
 			tr{
 				height: 28px;
 			}
@@ -452,15 +452,20 @@
 
 //////////////////////// ALT STYLES FOT SUPERTABLE //////////////////
 // table-inf_alt
+.table-inf_alt{
+	margin-bottom: -10px;
+}
 .table-inf{
 	border: 1px solid #b9d1d9;
 	@include border-radius(4px 4px 0 0);
 	background-color: #f5f5f5;
-
 }
 // supertable_alt
 .supertable_alt{
 	min-width: auto;
+	.supertable__wrapper{
+		height: 276px;
+	}
 }
 // ALT supertable
 .supertable{
@@ -485,6 +490,9 @@
 	.supertable__content {
 		.supertable__left{
 			width: auto;
+			.supertable__checkbox{
+				box-shadow: 9px 0px 10px -10px rgba(0, 0, 0, 0.3) inset;
+			}
 		}
 	}
 	.supertable__topper {
@@ -541,6 +549,10 @@
 				tr{
 					height: 28px;
 					line-height: 28px;
+					&:last-child{
+						height: 43px;
+						line-height: 43px;
+					}
 				}
 
 			}
@@ -601,5 +613,15 @@
 	}
 	.select__meta{
 		margin-right: 35px;
+	}
+}
+
+
+// supertable-last
+.supertable-last{
+	height: 43px;
+	.supertable__checkbox{
+		height: 43px;
+		color: transparent;
 	}
 }
