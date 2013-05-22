@@ -182,8 +182,8 @@ i.i_bag{
 	border-color: transparent transparent transparent #415865;
 }
 .ii_circle{
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
 	border-radius: 7px;
 	display: inline-block;
 	&:hover{
@@ -210,6 +210,9 @@ i.i_bag{
 	&:hover{
 		cursor: pointer;
 	}
+}
+.ii_square-or_mod{
+	background: #f8ebd2;
 }
 .circle-red{
 	background: #ea5649;
