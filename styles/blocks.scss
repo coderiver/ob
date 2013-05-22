@@ -46,9 +46,47 @@ i.i_bag{
 	@include sized-sprite($icons, i_arr-red);
 	display: inline-block;
 }
+.i_heart{
+	@include sized-sprite($icons, i_heart);
+	display: inline-block;
+}
+.i_bucks{
+	@include sized-sprite($icons, i_bucks);
+	display: inline-block;
+}
+.i_smile{
+	@include sized-sprite($icons, i_smile);
+	display: inline-block;
+}
+.i_four{
+	@include sized-sprite($icons, i_four);
+	display: inline-block;
+}
+.i_misc{
+	@include sized-sprite($icons, i_misc);
+	display: inline-block;
+}
+.i_chat{
+	@include sized-sprite($icons,i_chat);
+	display: inline-block;
+}
 .i_arr-b1{
 	@include sized-sprite($icons, 'arr_b1');
 	display: inline-block;
+}
+.not_ok{
+	@include sized-sprite($icons, 'not_ok');
+	display: inline-block;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.i_ok{
+	@include sized-sprite($icons, 'ok_med');
+	display: inline-block;
+	&:hover{
+		cursor: pointer;
+	}
 }
 .i_play{
 	width: 28px;
@@ -723,5 +761,113 @@ i.i_bag{
 		img{
 			vertical-align: top;
 		}
+	}
+}
+// super-popup
+.super-popup{
+	position: relative;
+	top: -100px;
+	right: 385px;
+	&:after{
+		content:"";
+		position: absolute;
+		z-index: 1;
+		top: 63px;
+		right: -143px;
+		@include rotate(45);
+		width: 29px;
+		height: 29px;
+		background: #FFF;
+		@include box-shadow(1px -1px 8px rgba(0,0,0,.3));
+	}
+	&:before{
+		content:"";
+		position: absolute;
+		z-index: 1000;
+		top: 57px;
+		right: -145px;
+
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 21px 0 21px 17px;
+		border-color: transparent transparent transparent #fff;
+	}
+	.super-popup__cont{
+		width: 339px;
+		height: 209px;
+		padding: 19px;
+		background: #fff;
+		border: 1px solid #b9d1d9;
+		@include border-radius(4px 4px 4px 375px / 4px 4px 4px 5px);
+		@include box-shadow(0 2px 8px rgba(0,0,0,.3));
+		position: absolute;
+		z-index: 400;
+		.not_ok{
+			position: absolute;
+			bottom: 16px;
+			left: 18px;
+		}
+		.i_ok{
+			position: absolute;
+			bottom: 16px;
+			right: 21px;
+		}
+	}
+	.super-popup__wrap{
+		margin-right: -15px;
+	}
+	.super-popup__item{
+		width: 105px;
+		padding-left: 52px;
+		line-height: 42px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		display: inline-block;
+		position: relative;
+		border: 1px dashed #b9d1d9;
+		@include border-radius(5px);
+		background-color: #fff;
+		font-family:"Open Sans Semibold";
+		font-size: 14px;
+		color: #bad1d9;
+		&:after{
+			content:"";
+			display: inline-block;
+			@include sized-sprite($icons, i_add);
+			position: absolute;
+			top: -6px;
+			right: -6px;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+		i{
+			position: absolute;
+			left: 13px;
+			top: 12px;
+		}
+	}
+	.super-popup__item_active{
+		border: 1px solid #bbd1d9;
+		color: #627b89;
+		&:after{
+			content:"";
+			display: inline-block;
+			@include sized-sprite($icons, ok_small);
+			position: absolute;
+			top: -6px;
+			right: -6px;
+		}
+	}
+}
+.super-popup__item{
+	i{
+		opacity: 0.5;
+	}
+}
+.super-popup__item_active{
+	i{
+		opacity: 1;
 	}
 }

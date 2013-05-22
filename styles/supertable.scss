@@ -77,7 +77,7 @@
 			td{
 				padding: 14px 0px 11px 0px;
 				border-bottom: 1px solid #bad1d9;
-				border-right: 1px solid #bad1d9;
+				border-left: 1px solid #bad1d9;
 			}
 			.table-left__wrap{
 				width: 220px;
@@ -123,6 +123,7 @@
 		.supertable__right{
 			width: 378px;
 			margin-right: -2px;
+			border-left: 1px solid #bad1d9;
 			tr{
 				height: 28px;
 			}
@@ -466,6 +467,10 @@
 	.supertable__wrapper{
 		height: 276px;
 	}
+	.supertable__right_alt{
+		position: static;
+		float: right;
+	}
 }
 // ALT supertable
 .supertable{
@@ -486,6 +491,13 @@
 .supertable_alt{
 	.supertable__right{
 		width: auto;
+	}
+	.supertable__bottom_alt {
+		.supertable__left_alt{
+			width: auto;
+			position: static;
+			overflow: hidden;
+		}
 	}
 	.supertable__content {
 		.supertable__left{
@@ -624,4 +636,20 @@
 		height: 43px;
 		color: transparent;
 	}
+}
+// sizing for table
+.check-all-wrap__big{
+	width: 113px;
+}
+.check-all-wrap__big_alt{
+	width: 113px;
+}
+.check-all-wrap__2{
+	width: 105px;
+}
+.check-all-wrap__3{
+	width: 63px;
+}
+.check-all-wrap__4{
+	width: 92px;
 }
