@@ -452,10 +452,6 @@
 }
 
 //////////////////////// ALT STYLES FOT SUPERTABLE //////////////////
-// table-inf_alt
-.table-inf_alt{
-	margin-bottom: -10px;
-}
 .table-inf{
 	border: 1px solid #b9d1d9;
 	@include border-radius(4px 4px 0 0);
@@ -497,6 +493,9 @@
 			width: auto;
 			position: static;
 			overflow: hidden;
+			table{
+				margin-left: -1px;
+			}
 		}
 	}
 	.supertable__content {
