@@ -2,4 +2,12 @@
 	body{
 		background:red;
 	}
+	.super-popup{
+		&:after{
+
+		}
+		&:before{
+			border: 0;
+		}
+	}
 }

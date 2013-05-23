@@ -42,6 +42,10 @@ i.i_bag{
 	@include sized-sprite($icons, i_more);
 	display: inline-block;
 }
+.i_moreAlt{
+	@include sized-sprite($icons, i_moreAlt);
+	display: inline-block;
+}
 .i_arr-red{
 	@include sized-sprite($icons, i_arr-red);
 	display: inline-block;
@@ -88,9 +92,21 @@ i.i_bag{
 		cursor: pointer;
 	}
 }
+.i_mod{
+	font-family:"Open Sans Bold";
+	font-size: 11px;
+	font-style: normal;
+	vertical-align: top;
+	line-height: 28px;
+	color: #fff;
+	padding: 0 9px 0 29px;
+}
+.i_modColor{
+	color: #bad1d9;
+}
 .i_play{
-	width: 28px;
-	height: 28px;
+	min-width: 28px;
+	min-height: 28px;
 	background: #93acba;
 	border: 1px solid #879aa4;
 	border-radius: 4px;
@@ -110,8 +126,8 @@ i.i_bag{
 	}
 }
 .i_stop{
-	width: 28px;
-	height: 28px;
+	min-width: 28px;
+	min-height: 28px;
 	background: #93acba;
 	border: 1px solid #879aa4;
 	border-radius: 4px;
@@ -135,10 +151,10 @@ i.i_bag{
 	}
 }
 .i_wtf{
-	width: 28px;
-	height: 28px;
+	min-width: 28px;
+	min-height: 28px;
 	background: #f5f8fa;
-	border: 1px solid #879aa4;
+	border: 1px solid #bad1d9;
 	border-radius: 4px;
 	display: inline-block;
 	position: relative;
@@ -155,10 +171,10 @@ i.i_bag{
 	}
 }
 .i_cross{
-	width: 28px;
-	height: 28px;
+	min-width: 28px;
+	min-height: 28px;
 	background: #f5f8fa;
-	border: 1px solid #879aa4;
+	border: 1px solid #bad1d9;
 	border-radius: 4px;
 	display: inline-block;
 	position: relative;
@@ -428,9 +444,8 @@ i.i_bag{
 		font-family:"Open Sans Semibold";
 		font-size: 14px;
 		color: #627b89;
-		
 		// display: none;
-		.i_more{
+		.i_more, .i_moreAlt{
 			position: absolute;
 			top: 7px;
 			left: 12px;
@@ -452,6 +467,14 @@ i.i_bag{
 	}
 	.statistics__graphic{
 
+	}
+}
+.statistics_myCapain{
+	li{
+		width: 23%;
+	}
+	.statistics__data{
+		font-size: 22px;
 	}
 }
 // info
@@ -765,6 +788,11 @@ i.i_bag{
 			vertical-align: top;
 		}
 	}
+	.promo__notice{
+		float: right;
+		display: inline-block;
+		margin-right: 4px;
+	}
 }
 // super-popup
 .super-popup{
@@ -776,7 +804,7 @@ i.i_bag{
 		position: absolute;
 		z-index: 1;
 		top: 63px;
-		right: -143px;
+		right: -142px;
 		@include rotate(45);
 		width: 29px;
 		height: 29px;
@@ -788,7 +816,7 @@ i.i_bag{
 		position: absolute;
 		z-index: 1000;
 		top: 57px;
-		right: -145px;
+		right: -144px;
 
 		width: 0px;
 		height: 0px;
@@ -872,5 +900,19 @@ i.i_bag{
 .super-popup__item_active{
 	i{
 		opacity: 1;
+	}
+}
+// choice
+.choice{
+	margin-right: 15px;
+	display: inline-block;
+	color: #6e8591;
+	.choice__data{
+		font-family:"Open Sans Bold";
+		font-size: 16px;
+	}
+	.choice__desc{
+		font-family:"Open Sans Semibold";
+		font-size: 11px;
 	}
 }
