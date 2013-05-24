@@ -50,6 +50,11 @@ i.i_bag{
 	@include sized-sprite($icons, i_arr-red);
 	display: inline-block;
 }
+.i_arr-redSmall{
+	i{
+		@include sized-sprite($icons, i_arr-redSmall);
+	}
+}
 .i_heart{
 	@include sized-sprite($icons, i_heart);
 	display: inline-block;
@@ -800,6 +805,9 @@ i.i_bag{
 		font-size: 10px;
 		color: #cd8200;
 		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }
 // super-popup

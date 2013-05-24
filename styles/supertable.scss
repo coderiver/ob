@@ -545,7 +545,7 @@
 			}
 		}
 	}
-	.supertable__content {
+	.supertable__content{
 		.supertable__center{
 			// width: 256px;
 			min-width: auto;
@@ -555,6 +555,7 @@
 			line-height: 28px;
 			font-weight: normal;
 			font-size: 12px;
+			// position: relative;
 		}
 		.supertable__right{
 			width: 378px;
@@ -634,9 +635,28 @@
 // supertable-last
 .supertable-last{
 	height: 43px;
+	td{
+		box-shadow: none;
+		&:first-child{
+		}
+	}
 	.supertable__checkbox{
 		height: 43px;
 		color: transparent;
+		box-shadow: none !important;
+		&:hover{
+			cursor: auto;
+		}
+	}
+	&:hover{
+		cursor: auto;
+	}
+}
+.supertable-last__shadow{
+	td{
+		&:first-child{
+			box-shadow: 9px 0px 10px -10px rgba(0, 0, 0, 0.3) inset !important;
+		}
 	}
 }
 // sizing for table
@@ -705,8 +725,14 @@
 	}
 }
 .supertable_myCampain{
+	// .supertable-last{
+	// 	height: 43px;
+	// }
+	.supertable__wrapper{
+		height: 464px;
+	}
 	.supertable-last{
-		height: 43px;
+		height: 231px;
 	}
 }
 .supertable__sort-by1{
@@ -736,4 +762,23 @@
 .supertable__sort-by7{
 	width: 46px;
 	padding: 0 28px 0 10px;
+}
+//
+.supertable__right, .supertable__center{
+	.disabled{
+		opacity: 0.5;
+	}
+	.selected, .finished{
+		border: 1px solid #b9d1d9;
+		@include border-radius(5px);
+		@include background-clip(padding-box);
+		background-color: #f5f7f7;
+		line-height: 19px;
+		padding: 0 4px;
+		display: inline;
+	}
+	.finished{
+		text-transform: uppercase;
+		color: #f2a92a;
+	}
 }

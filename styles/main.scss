@@ -1,5 +1,20 @@
 @import "base";
 
+@media only screen and (max-width: 1150px) {
+	.promo__banner{
+		display: none;
+	}
+	.statistics_myCapain {
+		.statistics__data{
+			font-size: 18px !important;
+		}
+	}
+}
+@media only screen and (max-width: 1060px) {
+	.table-left__wrap{
+		padding: 0 0 0 15px;
+	}
+}
 .clr{
 	clear: both;
 }
@@ -466,4 +481,17 @@
 		left: 13px;
 	}
 }
-
+// FOR POSITION BLOCKS
+.supertable_alt {
+	.supertable__content
+	td{
+		.i_arr-redSmall{
+				position: relative;
+			i{
+				position: absolute;
+				top: 9px;
+				left: 16px;
+			}
+		}
+	}
+}
