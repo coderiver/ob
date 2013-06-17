@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="styles/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/baron.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -14,9 +17,9 @@
 	<div class="notif">
 		<div class="notif__top">
 			<div class="h2">Уведомления</div>
-			<div class="notif__button"></div>
+			<div id="pane" class="notif__button"></div>
 		</div>
-		<div class="notif__cont">
+		<div class="notif__cont scroller">
 			<div class="notif__topical">
 				<div class="notif__item is-new">
 					<div class="notif__ico">
@@ -192,6 +195,45 @@
 						<span>12:30</span>
 					</div>
 				</div>
+				<div class="notif__item is-old">
+					<div class="notif__ico">
+						<i class="st"></i>
+					</div>
+					<div class="notif__text">
+						<span>«Длинный текст сообщения от техподдержки, вот такой вот текст…»</span>
+					</div>
+					<div class="notif__date">
+						<span>12.12.12</span><br>
+						<span>12:30</span>
+					</div>
+				</div>
+				<div class="notif__item is-old">
+					<div class="notif__ico">
+						<i class="he"></i>
+					</div>
+					<div class="notif__text">
+						<span>«Длинный текст сообщения от техподдержки, вот такой вот текст…»</span>
+					</div>
+					<div class="notif__date">
+						<span>12.12.12</span><br>
+						<span>12:30</span>
+					</div>
+				</div>
+				<div class="notif__item is-old">
+					<div class="notif__ico">
+						<i class="ci"></i>
+					</div>
+					<div class="notif__text">
+						<span>«Длинный текст сообщения от техподдержки, вот такой вот текст…»</span>
+					</div>
+					<div class="notif__date">
+						<span>12.12.12</span><br>
+						<span>12:30</span>
+					</div>
+				</div>
+			</div>
+			<div class="scroller__track">
+			    <div class="scroller__bar"></div>
 			</div>
 		</div>
 	</div>
