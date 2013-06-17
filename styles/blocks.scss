@@ -11,6 +11,57 @@ i.i_bag{
 	display: inline-block;
 	@include sized-sprite($icons, i_bag);
 }
+.ch{
+	display: inline-block;
+	@include sized-sprite($icons, ch_active);
+}
+.st{
+	display: inline-block;
+	@include sized-sprite($icons, st);
+}
+.notif__middle{
+	.st{
+		display: inline-block;
+		@include sized-sprite($icons, st_old);
+	}
+}
+.notif__bottom{
+	.st{
+		display: inline-block;
+		@include sized-sprite($icons, st_oldest);
+	}
+}
+.he{
+	display: inline-block;
+	@include sized-sprite($icons, he);
+}
+.notif__middle{
+	.he{
+		display: inline-block;
+		@include sized-sprite($icons, he_old);
+	}
+}
+.notif__bottom{
+	.he{
+		display: inline-block;
+		@include sized-sprite($icons, he_oldest);
+	}
+}
+.ci{
+
+}
+.notif__middle{
+	.ci{
+		display: inline-block;
+		@include sized-sprite($icons, ci_old);
+	}
+}
+.notif__bottom{
+	.ci{
+		display: inline-block;
+		@include sized-sprite($icons, ci_oldest);
+	}
+}
 .i_count{
 	padding: 3px 4px;
 	background: #edf3f5;
@@ -932,3 +983,109 @@ i.i_bag{
 		font-size: 11px;
 	}
 }
+// notification
+.notif-wrap{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.8;
+	z-index: 500;
+}
+.notif{
+	width: 360px;
+	background: #dce8ed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+	.notif__top{
+		position: relative;
+		height: 46px;
+		line-height: 46px;
+		padding: 0px 0 0px 35px;
+		background: #293137;
+		.h2{
+			display: inline-block;
+			font-family:"Open Sans Semibold";
+			font-size: 18px;
+			color: #FFF;
+		}
+	}
+	.notif__ico{
+		width: 59px;
+		height: 67px;
+		// background: red;
+		position: relative;
+		float: left;
+		i{
+			position: absolute;
+			top: 21px;
+			left: 15px;
+		}
+	}
+	.notif__topical{
+		margin-bottom: 4px;
+	}
+	.notif__text{
+		width: 235px;
+		margin-top: 8px;
+		float: left;
+		.h4{
+			margin-bottom: 5px;
+			font-family:"Open Sans Bold";
+			font-size: 14px;
+			color: #3c4a53;
+			line-height: 1;
+		}
+	}
+	.notif__date{
+		padding-right: 10px;
+		margin-top: 8px;
+		float: right;
+		text-align: right;
+		font-family:"Open Sans Bold";
+		font-size: 10px;
+		color: rgba(145,161,170, .5);
+	}
+	.notif__button{
+		min-width: 28px;
+		min-height: 28px;
+		background: #354049;
+		border: 1px solid #22282d;
+		border-radius: 4px;
+		display: inline-block;
+		position: relative;
+		&:hover{
+			background: #3a4e5e;
+			cursor: pointer;
+		}
+		&:after{
+			content: "";
+			@include sized-sprite($icons, 'notif_arr');
+			display: block;
+			position: absolute;
+			top: 7px;
+			left: 5px;
+		}
+	}
+	.notif__item{
+		overflow: hidden;
+		height: 67px;
+		border-bottom: 1px solid #bdd2d9;
+		font-family:"Open Sans Semibold";
+		font-size: 12px;
+		color: #91a1aa;
+	}
+	.is-new{
+		background: #fff;
+	}
+	.is-old{
+		background: #f5f7f7;
+		.notif__text{
+			margin-top: 18px;
+		}
+	}

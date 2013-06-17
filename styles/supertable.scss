@@ -452,6 +452,9 @@
 	@include border-radius(4px 4px 0 0);
 	background-color: #f5f5f5;
 }
+.table-inf_alt{
+	@include border-radius(3px 3px 0 0);
+}
 // supertable_alt
 .supertable_alt{
 	min-width: auto;
