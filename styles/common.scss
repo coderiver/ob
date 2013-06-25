@@ -578,14 +578,11 @@ a{
 .chart{
 	background: #fff;
 	padding-bottom: 9px;
-	
 }
 .select-date{
 	float: right;
-	
 	margin-right: 10px;
 	cursor: pointer;
-	
 	position: relative;
 	.select-date__in{
 		display: inline-block;
@@ -623,7 +620,17 @@ a{
 		}
 	}
 }
-
+.select-date_alt{
+	.select-date__in{
+		height: 25px;
+		line-height: 25px;
+		border-left: none;
+		border-right: none;
+	}
+	.date-interval{
+		color: #282f34;
+	}
+}
 .cal{
 	display: none;
 	cursor: default;
