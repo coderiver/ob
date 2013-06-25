@@ -1447,10 +1447,14 @@ i.i_bag{
 		padding-right: 20px;
 	}
 	thead{
+		.journal-table__item{
+			padding-top: 20px;
+		}
 		.journal-table__type,
 		.journal-table__msg,
 		.journal-table__data,
 		.journal-table__read{
+			margin-top: 15px;
 			font-family:"Open Sans Bold";
 			color: #529cc3;
 		}
@@ -1477,7 +1481,7 @@ i.i_bag{
 		vertical-align: top;
 		background: #FFF;
 		td{
-			;position: relative;
+			position: relative;
 			border-left: 20px solid #fff;
 			border-bottom: 1px solid #edf3f5;
 			&:after{
@@ -1501,7 +1505,6 @@ i.i_bag{
 		float: left;
 	}
 	.journal-table__msg{
-		min-height: 38px;
 		padding: 0 12px;
 		line-height: 1.4;
 	}
