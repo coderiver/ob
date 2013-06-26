@@ -386,6 +386,12 @@ i.i_bag{
 .conteiner_alt2{
 		padding: 15px 20px 0;
 }
+.conteiner_white{
+	background: #FFF;
+}
+.conteiner_profile{
+	padding: 15px 0px;
+}
 // stat
 .stat{
 	@extend %clr;
@@ -1570,7 +1576,7 @@ i.i_bag{
 	.next{
 		i{
 			@include sized-sprite($icons, "pagination_next");
-			right: 10px;
+			right: 11px;
 		}
 	}
 	.most-prev{
@@ -1582,7 +1588,7 @@ i.i_bag{
 	.prev{
 		i{
 			@include sized-sprite($icons, "pagination_prev");
-			left: 10px;
+			left: 11px;
 		}
 	}
 	.most-prev, .prev, .next, .most-next{
@@ -1593,3 +1599,21 @@ i.i_bag{
 		}
 	}
 }
+.user-wrap{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.user{
+	float: left;
+	margin-left: 0px;
+	margin-right: 0;
+	width: 50%;
+	margin: -1px;
+}
+.balance{
+	float: left;
+	margin-right: 0px;
+	width: 50%;
+	margin: -1px;
+}
+
