@@ -335,6 +335,22 @@ i.i_bag{
 	border: 1px solid #8eb032;
 	border-radius: 3px;
 }
+.b_dark-blue{
+	padding: 0 15px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	background: #a0b2bd;
+	color: #fff;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	border: 1px solid #7e8d95;
+	&:hover{
+		background: #8cadc1;
+	}
+}
+
 .tuning{
 	width: 276px;
 	height: 35px;
@@ -390,7 +406,12 @@ i.i_bag{
 	background: #FFF;
 }
 .conteiner_profile{
-	padding: 15px 0px;
+	padding: 0px;
+	border: none;
+	@include box-shadow(inset 1px 1px 0 #bad1d9 , inset -1px -1px 0 #bad1d9);
+}
+.conteiner__item{
+	padding: 15px 20px;
 }
 // stat
 .stat{
@@ -1601,19 +1622,75 @@ i.i_bag{
 }
 .user-wrap{
 	overflow: hidden;
-	margin-top: 10px;
+	padding: 10px;
 }
 .user{
 	float: left;
-	margin-left: 0px;
-	margin-right: 0;
-	width: 50%;
-	margin: -1px;
+	width: 49%;
+	margin-right: 2%;
 }
 .balance{
 	float: left;
-	margin-right: 0px;
-	width: 50%;
-	margin: -1px;
+	width: 49%;
+}
+.client{
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+	.client__ico{
+		width: 59px;
+		height: 59px;
+		line-height: 59px;
+		vertical-align: top;
+		overflow: hidden;
+		float: left;
+		margin-right: 15px;
+		border: 1px solid #bad1d9;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		img{
+			
+		}
+	}
+	.client__info{
+		width: 220px;
+		float: left;
+		font-family:"Open Sans Semibold";
+		color: #627b89;
+		.client__fio{
+			font-size: 26px;
+		}
+		.client__company{
+			font-size: 18px;
+		}
+	}
+	.client__changePass{
+		float: right;
+		.b_dark-blue{
+			margin-top: 15px;
+		}
+	}
+	.client__meta{
+		padding: 5px 0;
+		border-bottom: 1px solid #edf3f5;
+		font-family:"Open Sans Bold";
+		font-size: 14px;
+		color: #627b89;
+	}
+	.row{
+		overflow: hidden;
+	}
+	.row__left{
+		float: left;
+	}
+	.row__right{
+		float: right;
+	}
+.client__label{
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	background: red;
 }
 
