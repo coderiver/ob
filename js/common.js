@@ -1,21 +1,8 @@
-// function setEqualHeight(columns)
-// {
-// 	var tallestcolumn = 0;
-// 	columns.each(
-// 	function()
-// 	{
-// 		currentHeight = $(this).height();
-// 		if(currentHeight > tallestcolumn)
-// 		{
-// 			tallestcolumn = currentHeight;
-// 		}
-// 	});
-// 	columns.height(tallestcolumn);
-// }
-// 	$(document).ready(function() {
-// 	setEqualHeight($(".journal-table__item > td"));
-// });
-
-
-
+$(document).ready(function() {
+	// for select selected "post"
+	$(".js-select").change(function(){
+	    var text = $(this).val();
+	    $(".js-row__select").text(text);
+	});
+});
 
