@@ -109,7 +109,7 @@
 					content: "";
 					width: 0px;
 					height: 0px;
-					background: red;
+					background: #f8fafb;
 
 				}
 			}
@@ -501,5 +501,14 @@
 		position: absolute;
 		top: 10px;
 		right: 10px;
+	}
+}
+.client__label{
+	.i_clientMail{
+		line-height: 28px;
+	}
+	.i_clientAdd{
+		vertical-align: middle;
+		line-height: 28px;
 	}
 }

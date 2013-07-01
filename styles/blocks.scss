@@ -89,6 +89,14 @@ i.i_bag{
 .i_help{
 	@include sized-sprite($icons, i_help);
 }
+.i_clientMail{
+	display: inline-block;
+	@include sized-sprite($icons, i_clientMail);
+}
+.i_clientAdd{
+	display: inline-block;
+	@include sized-sprite($icons, i_clientAdd);
+}
 .i_more{
 	@include sized-sprite($icons, i_more);
 	display: inline-block;
@@ -1672,25 +1680,97 @@ i.i_bag{
 	}
 	.client__meta{
 		padding: 5px 0;
+		margin-bottom: 12px;
 		border-bottom: 1px solid #edf3f5;
 		font-family:"Open Sans Bold";
 		font-size: 14px;
 		color: #627b89;
 	}
+	.client__title{
+		height: 14px;
+		padding-bottom: 10px;
+		text-align: left;
+		color: #91a1aa;
+	}
+	.client__error{
+		width: 100%;
+		position: absolute;
+		top: 26px;
+		left: -1px;
+		font-family:"Open Sans Semibold";
+		font-size: 11px;
+		color: #ea5649;
+		background: #FFF;
+		border: 1px solid #bad1d9;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		&:after{
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: 16px;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 0 5.5px 6px 5.5px;
+			border-color: transparent transparent #bad1d9 transparent;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			z-index: 1000;
+			top: -6px;
+			left: 16px;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 0 5.5px 6px 5.5px;
+			border-color: transparent transparent #fff transparent;
+		}
+		p{
+			padding: 0 13px;
+		}
+	}
 	.row{
+		width: 100%;
+		margin-top: 25px;
 		overflow: hidden;
 	}
+	.row__cont{
+		@extend %clr;
+		// overflow: hidden;
+		padding-top: 10px;
+	}
 	.row__left{
+		width: 45%;
 		float: left;
 	}
 	.row__right{
+		width: 45%;
+		margin-right: 23px;
 		float: right;
+		text-align: right;
 	}
 .client__label{
-	display: inline-block;
+	width: 100%;
 	height: 28px;
 	line-height: 28px;
+	display: inline-block;
+	position: relative;
 	padding: 0 10px;
-	background: red;
+	background: #f8fafb;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	font-family:"Open Sans";
+	font-size: 14px;
+	text-align: left;
+}
+.client__label_active{
+	border: 1px solid #dae3e6;
+	color: #627b89;
+}
+.client__label_add{
+	border: 1px dashed #dae3e6;
+	color: #d2dbdf;
 }
 
