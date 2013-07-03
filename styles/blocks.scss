@@ -350,6 +350,8 @@ i.i_bag{
 	line-height: 30px;
 	display: inline-block;
 	background: #a0b2bd;
+	font-family:"Open Sans Semibold";
+	font-size: 12px;
 	color: #fff;
 	text-decoration: none;
 	-webkit-border-radius: 3px;
@@ -1473,6 +1475,9 @@ i.i_bag{
 				padding: 4px 20px 4px 15px;
 			}
 		}
+		.select-date_profile{
+
+		}
 
 	}
 .journal-table{
@@ -1643,6 +1648,97 @@ i.i_bag{
 	float: left;
 	width: 49%;
 }
+	.balance__top{
+		@extend %clr;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #edf3f5;
+	}
+	.balance__operation{
+		height: 50px;
+	}
+	.balance__money{
+		float: left;
+		font-family:"Open Sans Semibold";
+		line-height: 1;
+		.bal{
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+			color: #627b89;
+		}
+		.numb{
+			font-size: 26px;
+			color: #9ec33b;
+			.balance__ico{
+				margin-left: 20px;
+				display: inline-block;
+				@include sized-sprite($icons, "balance__ico");
+			}
+		}
+	}
+	.balance__label{
+		position: relative;
+		line-height: 50px;
+		font-family:"Open Sans Bold";
+		color: #627b89;
+		font-size: 16px;
+		&:after{
+			content: "";
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 8px 4.5px 0 4.5px;
+			border-color: #627b89 transparent transparent transparent;
+			position: absolute;
+			top: 8px;
+			right: -20px;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.balance__button{
+		margin-top: 17px;
+		float: right;
+		a{
+			margin-left: 10px;
+		}
+	}
+	.balance__item{
+		background: #f8fafb;
+		border: 1px solid #bad1d9;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+	}
+	.balance__inputOutput{
+
+	}
+	.balance__info{
+		padding: 15px 10px 20px;
+		span{
+			margin-bottom: 10px;
+			display: block;
+			font-family:"Open Sans";
+			font-size: 15px;
+			color: #627b89;
+			b{
+				margin-left: 3px;
+				margin-right: 5px;
+				font-family:"Open Sans Semibold";
+			}
+			.i_balance__money{
+				display: inline-block;
+				@include sized-sprite($icons, "balance__money");
+			}
+		}
+		em{
+			display: block;
+			font-family:"Open Sans";
+			font-size: 12px;
+			color: #91a1aa;
+			font-style: normal;
+		}
+	}
 .client{
 	margin-bottom: 25px;
 	overflow: hidden;
@@ -1659,7 +1755,7 @@ i.i_bag{
 		-webkit-border-radius: 3px;
 		        border-radius: 3px;
 		img{
-			
+
 		}
 	}
 	.client__info{
@@ -1820,4 +1916,58 @@ i.i_bag{
 		float: right;
 	}
 }
-
+.user__button{
+	padding-top: 18px;
+	margin-top: 125px;
+	border-top: 1px solid #edf3f5;
+	overflow: hidden;
+	button{
+		border: none;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.reset{
+		padding: 0 20px 0 40px;
+		height: 35px;
+		line-height: 35px;
+		background: #91a1aa;
+		border-radius: 3px;
+		border: 1px solid #7e8d95;
+		font-family:"Open Sans Semibold";
+		font-size: 14px;
+		color: #fff;
+		position: relative;
+		&:hover{
+			background: #83929b;
+		}
+		i{
+			@include sized-sprite($icons, user__reset);
+			position: absolute;
+			top: 11px;
+			left: 14px;
+		}
+	}
+	.apply{
+		padding: 0 20px 0 40px;
+		height: 35px;
+		line-height: 35px;
+		background: #9ec33b;
+		border-radius: 3px;
+		border: 1px solid #8eb032;
+		font-family:"Open Sans Semibold";
+		font-size: 14px;
+		color: #fff;
+		float: right;
+		position: relative;
+		&:hover{
+			background: #a3cf2f;
+		}
+		i{
+			@include sized-sprite($icons, user__apply);
+			position: absolute;
+			top: 11px;
+			left: 14px;
+		}
+	}
+}
