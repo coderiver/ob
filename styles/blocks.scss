@@ -1647,6 +1647,7 @@ i.i_bag{
 .balance{
 	float: left;
 	width: 49%;
+	min-height: 788px;
 }
 	.balance__top{
 		@extend %clr;
@@ -1705,8 +1706,10 @@ i.i_bag{
 		}
 	}
 	.balance__item{
+		position: relative;
+		@extend %clr;
 		margin-bottom: 10px;
-		padding: 12px 10px 12px 20px;		overflow: hidden;
+		padding: 12px 10px 12px 20px;
 		background: #f8fafb;
 		border: 1px solid #bad1d9;
 		-webkit-border-radius: 5px;
@@ -1755,6 +1758,11 @@ i.i_bag{
 			@include sized-sprite($icons, "balance_arr-right");
 		}
 	}
+	.balance__inputRed{
+		.balance_arr{
+			@include sized-sprite($icons, "balance_arr-rightRed");
+		}
+	}
 	.balance__status{
 		float: right;
 		margin-right: 5px;
@@ -1765,11 +1773,78 @@ i.i_bag{
 		.balance__date {
 			margin-bottom: 7px;
 		}
+		.balance__rejected{
+			font-family:"Open Sans Semibold";
+			color: #ea5649;
+			b{
+				font-family:"Open Sans Bold";
+			}
+		}
 		.balance__processing{
+			b{
+				font-family:"Open Sans Bold";
+			}
 			color: #f2a92a;
 		}
 		.balance__number{
 			text-align: right;
+		}
+		.balance__more{
+			width: 100%;
+			height: 34px;
+			line-height: 34px;
+			background: #f8fafb;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			border: 1px solid #bad1d9;
+			text-align: center;
+			font-family:"Open Sans Semibold";
+			color: #627b89;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		.balance__rejectedError{
+			width: 100%;
+			height: 24px;
+			line-height: 24px;
+			background: #FFF;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			border: 1px solid #c6d9e0;
+			position: absolute;
+			bottom: -20px;
+			left: 0;
+			z-index: 1000;
+			font-family:"Open Sans Semibold";
+			color: #91a1aa;
+			box-shadow: inset 0px 1px 0px #f1f6f7;
+			p{
+				padding: 0 15px;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top: -7px;
+				left: 16px;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 0 6px 7px 6px;
+				border-color: transparent transparent #bad1d9 transparent;
+			}
+			&:before{
+				content: "";
+				position: absolute;
+				z-index: 1000;
+				top: -6px;
+				left: 16px;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 0 6px 7px 6px;
+				border-color: transparent transparent #fff transparent;
+			}
 		}
 .client{
 	margin-bottom: 25px;

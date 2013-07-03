@@ -229,10 +229,45 @@
 							</div>
 
 							<div class="balance__status">
-								<div class="balance__date balance__processing">В обработке с 12.12.12 1423</div>
+								<div class="balance__date balance__processing">В обработке с <b>12.12.12 1423</b></div>
 								<div class="balance__number">№ 123654</div>
 							</div>
-							<div class="clr"></div>
+						</div>
+						<div class="balance__item">
+							<div class="balance__inputOutput">
+								<div class="balance__info balance__input">
+									<span><i class="balance_arr"></i> Вывод<b>43 978</b> <i class="i_balance__money"></i></span>
+									<em>R 2345 5747 7346 7436</em>
+								</div>
+							</div>
+balance__rejectedError
+&:after{
+	content: "";
+	position: absolute;
+	top: -7px;
+	left: 16px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 5.5px 6px 5.5px;
+	border-color: transparent transparent #bad1d9 transparent;
+}
+&:before{
+	content: "";
+	position: absolute;
+	z-index: 1000;
+	top: -6px;
+	left: 16px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 5.5px 6px 5.5px;
+	border-color: transparent transparent #fff transparent;
+}
+							<div class="balance__status">
+								<div class="balance__date">12.12.12 1423</div>
+								<div class="balance__number">№ 123654</div>
+							</div>
 						</div>
 						<div class="balance__item">
 							<div class="balance__inputOutput">
@@ -246,7 +281,20 @@
 								<div class="balance__date">12.12.12 1423</div>
 								<div class="balance__number">№ 123654</div>
 							</div>
-							<div class="clr"></div>
+						</div>
+						<div class="balance__item">
+							<div class="balance__inputOutput">
+								<div class="balance__info balance__input balance__inputRed">
+									<span><i class="balance_arr"></i> Вывод<b>43 978</b> <i class="i_balance__money"></i></span>
+									<em>R 2345 5747 7346 7436</em>
+								</div>
+							</div>
+
+							<div class="balance__status">
+								<div class="balance__date balance__rejected">Отклонена <b>12.12.12 1423</b></div>
+								<div class="balance__number">№ 123654</div>
+							</div>
+							<div class="balance__rejectedError"><p>Заявка отклонена. Произошла ошибка перевода</p></div>
 						</div>
 						<div class="balance__item">
 							<div class="balance__inputOutput">
@@ -260,35 +308,6 @@
 								<div class="balance__date">12.12.12 1423</div>
 								<div class="balance__number">№ 123654</div>
 							</div>
-							<div class="clr"></div>
-						</div>
-						<div class="balance__item">
-							<div class="balance__inputOutput">
-								<div class="balance__info balance__input">
-									<span><i class="balance_arr"></i> Вывод<b>43 978</b> <i class="i_balance__money"></i></span>
-									<em>R 2345 5747 7346 7436</em>
-								</div>
-							</div>
-
-							<div class="balance__status">
-								<div class="balance__date">12.12.12 1423</div>
-								<div class="balance__number">№ 123654</div>
-							</div>
-							<div class="clr"></div>
-						</div>
-						<div class="balance__item">
-							<div class="balance__inputOutput">
-								<div class="balance__info balance__input">
-									<span><i class="balance_arr"></i> Вывод<b>43 978</b> <i class="i_balance__money"></i></span>
-									<em>R 2345 5747 7346 7436</em>
-								</div>
-							</div>
-
-							<div class="balance__status">
-								<div class="balance__date">12.12.12 1423</div>
-								<div class="balance__number">№ 123654</div>
-							</div>
-							<div class="clr"></div>
 						</div>
 						<div class="balance__item">
 							<div class="balance__inputOutput">
@@ -302,7 +321,6 @@
 								<div class="balance__date">12.12.12 1423</div>
 								<div class="balance__number">№ 123654</div>
 							</div>
-							<div class="clr"></div>
 						</div>
 						<div class="balance__item">
 							<div class="balance__inputOutput">
@@ -316,8 +334,8 @@
 								<div class="balance__date">12.12.12 1423</div>
 								<div class="balance__number">№ 123654</div>
 							</div>
-							<div class="clr"></div>
 						</div>
+						<div class="balance__more">Показать больше</div>
 					</div>
 				</div>
 				<!-- END  balance-->
