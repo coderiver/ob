@@ -1705,18 +1705,19 @@ i.i_bag{
 		}
 	}
 	.balance__item{
+		margin-bottom: 10px;
+		padding: 12px 10px 12px 20px;		overflow: hidden;
 		background: #f8fafb;
 		border: 1px solid #bad1d9;
-		-webkit-border-radius: 3px;
-		        border-radius: 3px;
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
 	}
 	.balance__inputOutput{
-
+		float: left;
 	}
 	.balance__info{
-		padding: 15px 10px 20px;
 		span{
-			margin-bottom: 10px;
+			margin-bottom: 7px;
 			display: block;
 			font-family:"Open Sans";
 			font-size: 15px;
@@ -1738,7 +1739,38 @@ i.i_bag{
 			color: #91a1aa;
 			font-style: normal;
 		}
+		.balance_arr{
+			margin-left: 2px;
+			vertical-align: middle;
+			display: inline-block;
+		}
 	}
+	.balance__output{
+		.balance_arr{
+			@include sized-sprite($icons, "balance_arr-left");
+		}
+	}
+	.balance__input{
+		.balance_arr{
+			@include sized-sprite($icons, "balance_arr-right");
+		}
+	}
+	.balance__status{
+		float: right;
+		margin-right: 5px;
+		font-family:"Open Sans Semibold";
+		font-size: 12px;
+		color: #91a1aa;
+	}
+		.balance__date {
+			margin-bottom: 7px;
+		}
+		.balance__processing{
+			color: #f2a92a;
+		}
+		.balance__number{
+			text-align: right;
+		}
 .client{
 	margin-bottom: 25px;
 	overflow: hidden;
