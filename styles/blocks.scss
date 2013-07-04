@@ -424,6 +424,9 @@ i.i_bag{
 .conteiner__item{
 	padding: 15px 20px;
 }
+.conteiner_faq{
+	position: relative;
+}
 // stat
 .stat{
 	@extend %clr;
@@ -1275,7 +1278,7 @@ i.i_bag{
 		background: #999;
 		border-radius: 5px;
 	}
-.balance{
+.bal{
 	overflow: hidden;
 	.h3{
 		float: left;
@@ -1639,9 +1642,9 @@ i.i_bag{
 	padding: 10px;
 }
 .user{
-	width: 49%;
+	width: 50%;
 	min-height: 778px;
-	margin-right: 2%;
+	margin-right: 1%;
 	float: left;
 }
 .balance{
@@ -1827,7 +1830,7 @@ i.i_bag{
 				content: "";
 				position: absolute;
 				top: -7px;
-				left: 16px;
+				left: 25px;
 				width: 0px;
 				height: 0px;
 				border-style: solid;
@@ -1839,7 +1842,7 @@ i.i_bag{
 				position: absolute;
 				z-index: 1000;
 				top: -6px;
-				left: 16px;
+				left: 25px;
 				width: 0px;
 				height: 0px;
 				border-style: solid;
@@ -2102,3 +2105,85 @@ i.i_bag{
 		width: 140px;
 	}
 }
+.search{
+	padding-bottom: 20px;
+	input[type="search"]::-webkit-search-cancel-button {
+	  display: none;
+
+	}
+	.search__input{
+		overflow: hidden;
+	}
+	input[type="text"]{
+		width: 99%;
+		padding: 0 10px;
+		height: 44px;
+		border: 1px dashed #e7eef1;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		box-sizing: border-box;
+		font-family:"Open Sans";
+		font-size: 18px;
+
+	}
+	input[type="submit"]{
+		float: right;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 25px;
+		background: #46bfd9;
+		border: 1px solid #4a9cc8;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		font-family:"Open Sans Semibold";
+		font-size: 16px;
+		color: #fff;
+		&:hover{
+			cursor: pointer;
+			background: #40b0c8;
+		}
+	}
+}
+.scroller_mod{
+	.scroller__track{
+		top: 90px;
+		right: 15px;
+	}
+	.scroller__bar{
+		width: 6px;
+		height: 40px !important;
+		background: #46bfd9;
+		border: 1px solid #4a9cc8;
+	}
+}
+.faq{
+	margin: 0 -20px;
+	border-top: 1px solid #edf3f5;
+	.faq__item{
+		margin-top: 30px;
+		padding: 0 20px 0 35px;
+	}
+	.h2{
+		margin-bottom: 10px;
+		font-family:"Open Sans Semibold";
+		font-size: 20px;
+		color: #627b89;
+	}
+	.faq__cont{
+
+		margin-bottom: 20px;
+		padding-right: 130px;
+		line-height: 1.4;
+		font-family:"Open Sans";
+		font-size: 16px;
+		color: #91a1aa;
+	}
+	.faq__more{
+		margin-top: 20px;
+		display: block;
+		font-family:"Open Sans Semibold";
+		font-size: 14px;
+		color: #91a1aa;
+	}
+}
+

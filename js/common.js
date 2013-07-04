@@ -4,5 +4,6 @@ $(document).ready(function() {
 	    var text = $(this).val();
 	    $(".js-row__select").text(text);
 	});
+	$('.scroller').baron();
 });
 
