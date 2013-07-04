@@ -1801,6 +1801,7 @@ i.i_bag{
 			font-family:"Open Sans Semibold";
 			color: #627b89;
 			&:hover{
+				 background: #f0f7fa;
 				cursor: pointer;
 			}
 		}
@@ -2076,5 +2077,28 @@ i.i_bag{
 			top: 11px;
 			left: 14px;
 		}
+	}
+}
+.row__mod{
+	.row__left{
+		width: 20%;
+	}
+	.row__right{
+		width: 66%;
+		padding-left: 25px;
+		margin-right: 0;
+		overflow: hidden;
+		float: right;
+	}
+	.client__title_mod{
+		margin-left: -20px;
+	}
+	.client__label_mod{
+		float: right;
+	}
+}
+.row__left_small{
+	.row__select{
+		width: 140px;
 	}
 }
