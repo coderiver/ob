@@ -1676,6 +1676,36 @@ i.i_bag{
 		padding:  0 12px;
 		float: right;
 	}
+// journal-table_support
+.journal-table_support{
+	table{
+		width: 100%;
+		.first{
+			width: 35px;
+		}
+		.second{
+			
+		}
+		.third{
+			width: 88px;
+		}
+		.fourth{
+			width: 45px;
+		}
+	}
+	.journal-table__type{
+		width: auto;
+		padding: 0;
+	}
+	.journal-table__data{
+		width: auto;
+		padding: 0 5px 0 0;
+	}
+	.journal-table__read{
+		width: auto;
+		padding: 0;
+	}
+}
 
 // pagination
 .pagination{
