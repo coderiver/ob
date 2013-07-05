@@ -1240,10 +1240,11 @@ i.i_bag{
 	.notif__faq_white{
 		background: #FFF;
 	}
-	.notif__cont{
+	.notif__txt{
 		margin: 13px 0;
 		font-family:"Open Sans";
 	}
+
 	.notif__top{
 		position: relative;
 		height: 46px;
@@ -2282,4 +2283,16 @@ i.i_bag{
 		color: #91a1aa;
 	}
 }
-
+.two-btn{
+	float: right;
+	margin-left: 8px;
+	.btn{
+		float: left;
+		margin: 0;
+		&:first-child{
+			border-radius:4px 0 0 4px;
+			border-right: 0;
+		}
+		&:last-child{border-radius:0 4px 4px 0;}
+	}
+}
