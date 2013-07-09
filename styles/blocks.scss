@@ -2451,7 +2451,7 @@ i.i_bag{
 	height: 190px;
 	background: #FFF;
 	position: absolute;
-	top: 300px;
+	top: 100px;
 	left: 50%;
 	margin-left: -350px;
 	z-index: 1000;
@@ -2460,7 +2460,7 @@ i.i_bag{
 	        border-radius: 5px;
 }
 	.wrap-popupError{
-		display: none;
+		// display: none;
 	}
 	.popupError{
 
@@ -2500,7 +2500,7 @@ i.i_bag{
 		}
 	}
 	.wrap-popupBanner{
-		width: 700px;
+		width: 760px;
 		height: 230px;
 		background: #FFF;
 		position: absolute;
@@ -2509,8 +2509,8 @@ i.i_bag{
 		margin-left: -350px;
 		z-index: 1000;
 		@include box-shadow(0 2px 20px rgba(0,0,0,.75));
-		-webkit-border-radius: 5px;
-		        border-radius: 5px;
+		-webkit-border-radius: 5px 5px 0 0;
+		        border-radius: 5px 5px 0 0;
 	}
 	.popupBanner{
 		position: relative;
@@ -2521,30 +2521,45 @@ i.i_bag{
 		overflow: hidden;
 		border-bottom: 1px solid #d3e3e8;
 	}
-	.popupBanner__size{
-		height: 27px;
-		line-height: 27px;
-		padding: 0 11px;
-		// background: red;
-		border: 1px dashed #d3e3e8;
-		-webkit-border-radius: 3px;
-		        border-radius: 3px;
-		margin-right: 10px;
-		float: left;
-		color: #a6b3ba;
-		font-size: 14px;
-	}
-	.popupBanner__size_active{
-		background: #f2a92a;
-		border: 1px solid #cd8200;
-		color: #fff;
-	}
-	.popupBanner__close{
-		position: absolute;
-		top: 22px;
-		right: 18px;
-		@include sized-sprite($icons, "popupBanner__close");
-		&:hover{
-			cursor: pointer;
+		.popupBanner__size{
+			height: 27px;
+			line-height: 27px;
+			padding: 0 11px;
+			border: 1px dashed #d3e3e8;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			margin-right: 10px;
+			float: left;
+			color: #a6b3ba;
+			font-size: 14px;
 		}
+		.popupBanner__size_active{
+			background: #f2a92a;
+			border: 1px solid #cd8200;
+			color: #fff;
+		}
+		.popupBanner__close{
+			position: absolute;
+			top: 22px;
+			right: 18px;
+			@include sized-sprite($icons, "popupBanner__close");
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	.popupBanner__cnt{
+		padding: 18px 13px 16px 13px;
+		background: url(../images/icons/bg_cell.png) repeat;
+		border-radius: 0 0 5px 5px;
 	}
+		.popupBanner__title{
+			margin-bottom: 10px;
+			font-size: 30px;
+			color: #627b89;
+		}
+		.popupBanner__media{
+			padding: 2px 2px 0;
+			border: 1px solid #bad1d9;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+		}
