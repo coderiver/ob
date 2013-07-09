@@ -374,7 +374,7 @@ i.i_bag{
 .tuning{
 	width: 276px;
 	height: 35px;
-	line-height: 40px;
+	line-height: 35px;
 	display: inline-block;
 	background: #f8fafb;
 	border: 1px solid #bad1d9;
@@ -2446,3 +2446,105 @@ i.i_bag{
 		@include background-image(linear-gradient(left, #ff7768 0%, #fde526 20%, #f6e727 55%, #9be751 100%));
 	}
 }
+.wrap-popupError{
+	width: 700px;
+	height: 190px;
+	background: #FFF;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 1000;
+	@include box-shadow(0 2px 20px rgba(0,0,0,.75));
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+	.wrap-popupError{
+		display: none;
+	}
+	.popupError{
+
+	}
+	.popupError__title{
+		margin-top: 40px;
+		margin-bottom: 25px;
+		text-align: center;
+		font-family:"Open Sans";
+		font-size: 30px;
+		color: #8899a3;
+		b{
+			font-family:"Open Sans Bold";
+			margin-left: 5px;
+		}
+	}
+	.popupError__note{
+		margin-bottom: 25px;
+		text-align: center;
+		font-family:"Open Sans";
+		font-size: 14px;
+		color: #8899a3;
+	}
+	.popupError__button{
+		width: 103px;
+		height: 34px;
+		line-height: 34px;
+		background: #9ec33b;
+		margin: 0 auto;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		text-align: center;
+		color: #FFF;
+		&:hover{
+			cursor: pointer;
+			background: #98bb3b;
+		}
+	}
+	.wrap-popupBanner{
+		width: 700px;
+		height: 230px;
+		background: #FFF;
+		position: absolute;
+		top: 300px;
+		left: 50%;
+		margin-left: -350px;
+		z-index: 1000;
+		@include box-shadow(0 2px 20px rgba(0,0,0,.75));
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+	}
+	.popupBanner{
+		position: relative;
+	}
+	.popupBanner__head{
+		height: 28px;
+		padding: 16px 0 16px 16px;
+		overflow: hidden;
+		border-bottom: 1px solid #d3e3e8;
+	}
+	.popupBanner__size{
+		height: 27px;
+		line-height: 27px;
+		padding: 0 11px;
+		// background: red;
+		border: 1px dashed #d3e3e8;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
+		margin-right: 10px;
+		float: left;
+		color: #a6b3ba;
+		font-size: 14px;
+	}
+	.popupBanner__size_active{
+		background: #f2a92a;
+		border: 1px solid #cd8200;
+		color: #fff;
+	}
+	.popupBanner__close{
+		position: absolute;
+		top: 22px;
+		right: 18px;
+		@include sized-sprite($icons, "popupBanner__close");
+		&:hover{
+			cursor: pointer;
+		}
+	}
