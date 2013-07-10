@@ -585,8 +585,12 @@
 		.supertable__center{
 			table {
 				td{
+					position: relative;
 					height: 28px;
 					border-left: 0;
+					a{
+						display: inherit;
+					}
 				}
 			}
 		}
@@ -631,6 +635,17 @@
 	}
 	.select__meta{
 		margin-right: 35px;
+	}
+	.select__list{
+		position: relative;
+		z-index: 1000;
+		list-style: none;
+		li{
+			background: #FFF;
+		}
+		a{
+
+		}
 	}
 }
 

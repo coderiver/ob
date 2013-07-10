@@ -97,7 +97,7 @@
 					<div class="info">
 						<div class="info__top info__top_if-rirst">Управление ставкой</div>
 						<div class="desc">
-							<div class="desc__cont desc__cont_mod">
+							<a href="#" class="desc__cont desc__cont_mod">
 								<div class="notice notice_alt">
 									<div class="notice__item">
 										<i class="i_arr-red"></i>
@@ -115,25 +115,38 @@
 										</div>
 									</div>
 								</div>
-
-							</div>
+							</a>
 						</div>
 						<div class="desc">
-							<div class="desc__cont desc__cont_mod">
+							<a href="#" class="desc__cont desc__cont_mod">
 								<div class="notice">
 									<div class="notice__item">
 										<div class="notice__meta">Лимит</div>
 										<div class="notice__asd">12 000 354</div>
 									</div>
+
+
 									<div class="notice__item">
 										<div class="notice__meta">Лимит</div>
 										<div class="notice__asd">12 000 354</div>
 									</div>
 								</div>
+							</a>
+							<!-- BEGIN super-popup -->
+							<div class="super-popup">
+								<div class="super-popup__cont super-popup__cont_budget">
+									<div class="super-popup__wrap">
+										<div class="super-popup__title">Суточный лимит</div>
+											<input type="text" class="super-popup__input" value="12 000 000">
+									</div>
+									<i class="not_ok"></i>
+									<i class="i_ok"></i>
+								</div>
 							</div>
+							<!-- END super-popup -->
 						</div>
 						<div class="desc">
-							<div class="desc__cont desc__cont_mod">
+							<a href="#" class="desc__cont desc__cont_mod">
 								<div class="notice">
 									<div class="notice__item">
 										<div class="notice__meta">Лимит</div>
@@ -144,7 +157,7 @@
 										<div class="notice__asd">12 000 354</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<!-- END info -->
@@ -156,13 +169,13 @@
 						</div>
 						<div class="desc">
 							<div class="desc__meta">Категории:</div>
-							<div class="desc__cont desc__cont_alt">
+							<a href="#" class="desc__cont desc__cont_alt">
 								Коммерция, развлечения,
 								разное, знакомства, еще тема...
-							</div>
+							</a>
 
 							<!-- BEGIN super-popup -->
-							<div class="super-popup">
+							<div class="super-popup" style="display:none">
 								<div class="super-popup__cont">
 									<div class="super-popup__wrap">
 										<div class="super-popup__item super-popup__item_active">
@@ -200,39 +213,57 @@
 						</div>
 						<div class="desc">
 							<div class="desc__meta">География:</div>
-							<div class="desc__cont desc__cont_alt">
-								Москва, Московская область,
-								Саратов, Саратовская область...
-							</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								Коммерция, развлечения,
+								разное, знакомства, еще тема...
+							</a>
 						</div>
 						<div class="desc">
 							<div class="desc__meta">География:</div>
-							<div class="desc__cont desc__cont_alt">
-								Москва, Московская область,
-								Саратов, Саратовская область...
-							</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								Коммерция, развлечения,
+								разное, знакомства, еще тема...
+							</a>
 						</div>
 						<div class="desc">
 							<div class="desc__meta">География:</div>
-							<div class="desc__cont desc__cont_alt">
-								Москва, Московская область,
-								Саратов, Саратовская область...
-							</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								Коммерция, развлечения,
+								разное, знакомства, еще тема...
+							</a>
 						</div>
 						<div class="desc">
 							<div class="desc__meta">География:</div>
-							<div class="desc__cont desc__cont_alt">
-								Москва, Московская область,
-								Саратов, Саратовская область...
-							</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								Коммерция, развлечения,
+								разное, знакомства, еще тема...
+							</a>
 						</div>
 					</div>
 					<!-- END info -->
 					<!-- BEGIN info -->
 					<div class="info">
-						<div class="info__top info__top-if-last info__top_link">
+						<div class="info__top info__top-if-last info__top_link info__top_active">
 							Раписание
 							<i class="ii_arr"></i>
+						</div>
+						<div class="desc">
+							<div class="desc__meta">Дата:</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								с <b>12.08.2012</b> по <b>11.06.2013</b>
+							</a>
+						</div>
+						<div class="desc">
+							<div class="desc__meta">Время:</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								с <b>19:00</b> по <b>23:30</b>
+							</a>
+						</div>
+						<div class="desc">
+							<div class="desc__meta">Дни недели:</div>
+							<a href="#" class="desc__cont desc__cont_alt">
+								<b>Пн,Вт,Ср,Чт,Пт,Сб,Вс</b>
+							</a>
 						</div>
 					</div>
 					<!-- END info -->
@@ -367,6 +398,12 @@
 								<div class="select">
 									<span class="select__meta">Все объявления</span>
 									<i class="i_arr-b1"></i>
+									<ul class="select__list">
+										<li><a href="#">lorem123123</a></li>
+										<li><a href="#">lorem123123</a></li>
+										<li><a href="#">lorem123123</a></li>
+										<li><a href="#">lorem123123</a></li>
+									</ul>
 								</div>
 							</div>
 
@@ -656,62 +693,62 @@
 											<table role="table-center">
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td role="check-all-wrap">
-														<div class="promo">
+														<a href="#" class="promo">
 															<div class="promo__title">Bad Piggies #1 Banner</div>
 															<div class="promo__banner">
 																<img src="images/bann.jpg" alt="">
 															</div>
-														</div>
+														</a>
 													</td>
 												</tr>
 												<tr class="supertable-last">

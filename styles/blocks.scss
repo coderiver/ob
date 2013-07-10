@@ -805,9 +805,12 @@ i.i_bag{
 		color: #91a1aa;
 		word-break: break-all;
 		resize: none;
+		display: inline-block;
+		text-decoration: none;
 	}
 	.desc__cont_alt{
-		height: 31px;
+		// height: 31px;
+		height: auto;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
@@ -1022,6 +1025,9 @@ i.i_bag{
 		@include border-radius(1px);
 		border: 1px solid #d4e3e7;
 		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		right: 8px;
 		&:hover{
 			opacity: 1;
 			cursor: pointer;
@@ -1096,6 +1102,35 @@ i.i_bag{
 			position: absolute;
 			bottom: 16px;
 			right: 21px;
+		}
+	}
+	.super-popup__cont_budget{
+		height: auto;
+		.super-popup__wrap{
+			min-height: 200px;
+			position: relative;
+			padding: 15px;
+			margin-right: 0;
+			border: 1px solid #e3eef2;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+		}
+		.super-popup__title{
+			position: absolute;
+			top: -17px;
+			left: -12px;
+			background: #fff;
+			padding: 12px 25px 8px 10px;
+			font-family:"Open Sans Semibold";
+			color: #627b89;
+		}
+		.super-popup__input{
+			margin-top: 4px;
+			min-width: 186px;
+			padding: 7px 12px;
+			border: 1px solid #eaf1f4;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
 		}
 	}
 	.super-popup__wrap{
