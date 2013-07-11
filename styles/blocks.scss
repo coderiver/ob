@@ -1105,9 +1105,11 @@ i.i_bag{
 		}
 	}
 	.super-popup__cont_budget{
+		width: 267px;
+		padding: 19px 12px;
 		height: auto;
 		.super-popup__wrap{
-			min-height: 200px;
+			margin-bottom: 12px;
 			position: relative;
 			padding: 15px;
 			margin-right: 0;
@@ -1124,13 +1126,32 @@ i.i_bag{
 			font-family:"Open Sans Semibold";
 			color: #627b89;
 		}
+		.super-popup__row{
+			margin-bottom: 15px;
+		}
+		.super-popup__note{
+			font-family:"Open Sans Semibold";
+			font-size: 11px;
+			color: #627b89;
+			text-align: center;
+		}
 		.super-popup__input{
 			margin-top: 4px;
-			min-width: 186px;
+			margin-right: 9px;
+			width: 180px;
+			height: 20px;
+			background: #fcfdfd;
 			padding: 7px 12px;
 			border: 1px solid #eaf1f4;
 			-webkit-border-radius: 3px;
 			        border-radius: 3px;
+			font-family:"Open Sans Semibold";
+			font-size: 22px;
+			color: #627b89;
+		}
+		.super-popup_money{
+			display: inline-block;
+			@include sized-sprite($icons, 'super-popup_money');
 		}
 	}
 	.super-popup__wrap{
@@ -1177,6 +1198,41 @@ i.i_bag{
 			position: absolute;
 			top: -6px;
 			right: -6px;
+		}
+	}
+}
+.super-popup_budget{
+	width: 257px;
+	right: 298px;
+	&:before{
+		border-width: 14px 0 14px 14px;
+		right: -49px;
+	}
+	&:after{
+		width: 17px;
+		height: 17px;
+		right: -45px;
+	}
+	.super-popup__cont_budget{
+		.i_ok{
+			right: 12px;
+			@include sized-sprite($icons, 'budget_ok');
+		}
+		.not_ok{
+			position: static;
+			width: auto;
+			height: 24px;
+			padding: 0 15px;
+			line-height: 24px;
+			background: #9ec33b;
+			border: 1px solid #8eb032;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+
+			font-family:"Open Sans Semibold";
+			font-size: 11px;
+			font-style: normal;
+			color: #FFF;
 		}
 	}
 }
